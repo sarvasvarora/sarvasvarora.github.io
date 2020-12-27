@@ -1,0 +1,33 @@
+---
+---
+{% assign ignore_urls = "/404.html,/search.json,/sitemap.xml" | split: ',' %}
+[
+    {% for post in site.posts %}
+    {
+
+        "title"    : "{{ post.title | escape }}",
+        "excerpt"  : "{{ post.excerpt | escape }}",
+        "tags"     : "{{ post.tags | join: ', ' }}",
+        "tagline"  : "{{ post.tagline | escape }}",
+        "category" : "{{ post.category }}",
+        "url"      : "{{ site.baseurl }}{{ post.url }}",
+        "date"     : "{{ post.date | date: "%B %d, %Y" }}"
+
+    } {% unless forloop.last %},{% endunless %}
+    {% endfor %},
+    {% for page in site.pages %}
+    {% if ignore_urls contains page.url %} {% else %}
+    {
+
+        "title"    : "{{ page.title | escape }}",
+        "excerpt"  : "{{ page.excerpt | escape }}",
+        "tags"     : "{{ page.tags | join: ', ' }}",
+        "tagline"  : "{{ page.tagline | escape }}",
+        "category" : "{{ page.category }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ page.date | date: "%B %d, %Y" }}"
+
+    } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+    {% endfor %}
+]

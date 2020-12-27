@@ -1,0 +1,83 @@
+title:            Sarvasv's e-Crib 
+description:      Sharing deets about the stuff I learn and experience!
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              https://sarvasvarora.github.io
+#http://localhost:5000
+
+disqus_shortname: sarvasvarora
+
+# Owner/author information
+owner:
+  name:           Sarvasv Arora
+  avatar:         author_images/sarvasv.jpg
+  bio:            Computer Science and Statistics at McGill University
+  location:       Montreal via New Delhi
+  status:         Contemplatin' and vibin' ✨✔️
+  email:          sarvasvarora@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter: sarvasvarora
+  linkedin: sarvasvarora
+  #google_scholar: 
+  #google_plus: 
+  github: sarvasvarora
+  #facebook: 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: 
+google_verify: 
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Curriculum Vitæ
+    url: /cv/
+  - title: Deets # deets about the stuff I experience in life + philosophical articles + new findings
+    url: /deets/
+  - title: Articles # academic related articles
+    url: /articles/
+  - title: Projects # CS projects
+    url: /projects/
+  - title: Readings # reading list
+    url: /readings/
+  - title: Miscellaneous # stuff like MOOCs, resources, notes, etc.
+    url: /miscellaneous/
+  - title: FAQs # FAQs about me and this website
+    url: /faqs/
+  - title: Tags Archive # all the posts at one place, organized by tags
+    url: /tags/ 
+  - title: <i class="fab fa-searchengin fa-lg"></i> # search page
+    url: /search/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Calcutta
+future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+kramdown:
+  extensions: ["strikethrough"]
+  
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess", "_pages"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# MathJax
+mathjax: true
