@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Sarvasv Arora
-description: "Sarvasv Arora's website"
+description: "Sarvasv Arora's personal website."
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: website_images/header.jpg
