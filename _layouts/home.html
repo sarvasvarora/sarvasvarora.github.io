@@ -25,20 +25,13 @@
 		<div class="image-wrap parallax">
 			<img src= {% if page.image.feature contains 'http://' %} "{{ page.image.feature }}" crossorigin="anonymous"
 			{% elsif page.image.feature contains 'https://' %} "{{ page.image.feature }}" crossorigin="anonymous" {%
-			else %} "{{ site.url }}/images/{{ page.image.feature }}" {% endif %} alt="{{ page.title }} feature image"> 
+			else %} "/images/{{ page.image.feature }}" {% endif %} alt="{{ page.title }} feature image"> 
 		</div>
 		{% if page.image.credit %}
 		<span class="image-credit parallax"
 			>Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span
 		>
 		{% endif %}
-		<!-- JQuery CDN -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-			crossorigin="anonymous"
-		></script>
-
 		<!-- Scripts -->
 		<script src="/assets/js/parallax.js"></script>
 		{% endif %}

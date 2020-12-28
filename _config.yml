@@ -1,7 +1,7 @@
 title:            Sarvasv's e-Crib 
 description:      Sharing deets about the stuff I learn and experience!
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              https://sarvasvarora.github.io
+url:              https://sarvasvarora.me
 #http://localhost:5000
 
 disqus_shortname: sarvasvarora
@@ -10,9 +10,9 @@ disqus_shortname: sarvasvarora
 owner:
   name:           Sarvasv Arora
   avatar:         author_images/sarvasv.jpg
+  status:         Contemplatin' and vibin' ✨✔️
   bio:            Computer Science and Statistics at McGill University
   location:       Montreal via New Delhi
-  status:         Contemplatin' and vibin' ✨✔️
   email:          sarvasvarora@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter: sarvasvarora
@@ -23,8 +23,8 @@ owner:
   #facebook: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: 
-google_verify: 
+google_analytics: G-526ZTV8J82
+google_verify: vykrFkS61sFMSFbDZNMsCkcpTHJK23xXN9dccBXzszk
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
