@@ -33,3 +33,15 @@
 {% if site.owner.email %}<a href="mailto:{{ site.owner.email }}" class="author-social" target="_blank"><i class="fa fa-envelope-open-text"></i> E-Mail</a>{% endif %}
 {% if site.owner.google_plus %}<a href="https://plus.google.com/{{ site.owner.google_plus }}" class="author-social" target="_blank"><i class="fab fa-google-plus"></i> Google+</a>{% endif %}
 
+{% if site.owner.donate %}
+<hr>
+
+<div style="text-align:center;">
+	<p style="margin-bottom:0.5em;">{{ site.owner.donate.callout }}</p>
+	<a class="author-social" href="{{ site.owner.donate.link }}" target="_blank" style="display:flex;justify-content: center;">
+		<img class="author-social" src="/images/website-images/buymeacoffee.png" alt="Buy Me A Coffee" style="height: 2em !important;width: 75%;" >
+	</a>
+</div>
+{% endif %}
+
+

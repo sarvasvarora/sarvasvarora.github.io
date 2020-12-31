@@ -9,7 +9,7 @@ disqus_shortname: sarvasvarora
 # Owner/author information
 owner:
   name:           Sarvasv Arora
-  avatar:         author_images/sarvasv.jpg
+  avatar:         author-images/sarvasv.jpg
   status:         Contemplatin' and vibin' ✨✔️
   bio:            Computer Science and Statistics at McGill University
   location:       Montreal via New Delhi
@@ -21,6 +21,9 @@ owner:
   #google_plus: 
   github: sarvasvarora
   #facebook: 
+  donate:
+    callout: If you found my content useful or would want to encourage me for what I’m doing, I’d really appreciate if you buy me a coffee!
+    link: https://paypal.me/sarvasvarora
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: G-526ZTV8J82

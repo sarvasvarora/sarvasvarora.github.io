@@ -1,0 +1,55 @@
+I"X
+<!-- site_tags: Testing,Just for fun -->
+
+<!-- tag_words: Just for funTesting -->
+
+<div id="tags">
+  <ul class="tag-box inline">
+  
+    <li><small><a href="#just-for-fun-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Just for fun <span>1</span></a></small></li>
+  
+    <li><small><a href="#testing-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Testing <span>1</span></a></small></li>
+  
+  </ul>
+
+
+
+
+  <h3 id="just-for-fun-ref">Just for fun</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/deet/HNY/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Hny
+           <span class="entry-date">
+              <time datetime="2020-12-31T00:00:00+05:30" itemprop="datePublished">
+                December 31, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="testing-ref">Testing</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/deet/HNY/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Hny
+           <span class="entry-date">
+              <time datetime="2020-12-31T00:00:00+05:30" itemprop="datePublished">
+                December 31, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+</div>
+:ET
