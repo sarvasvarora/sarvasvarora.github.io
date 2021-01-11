@@ -1,0 +1,76 @@
+I"	
+<!-- site_tags: Computer Science,Algorithms,Self Reflection -->
+
+<!-- tag_words: AlgorithmsComputer ScienceSelf Reflection -->
+
+<div id="tags">
+  <ul class="tag-box inline">
+  
+    <li><small><a href="#algorithms-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Algorithms <span>1</span></a></small></li>
+  
+    <li><small><a href="#computer-science-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Computer Science <span>1</span></a></small></li>
+  
+    <li><small><a href="#self-reflection-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Self Reflection <span>1</span></a></small></li>
+  
+  </ul>
+
+
+
+
+  <h3 id="algorithms-ref">Algorithms</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="computer-science-ref">Computer Science</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="self-reflection-ref">Self Reflection</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/deet/My-decision-to-start-blogging-and-why-you-should-too/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          My decision to start blogging and why you should too!
+           <span class="entry-date">
+              <time datetime="2021-01-10T00:00:00+05:30" itemprop="datePublished">
+                January 10, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+</div>
+:ET

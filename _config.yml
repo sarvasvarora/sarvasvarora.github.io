@@ -56,8 +56,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Calcutta
 future:      true
-#pygments:    true
-highlighter: rouge
+highlighter: #rouge 
 markdown:    kramdown
 kramdown:
   extensions: ["strikethrough"]

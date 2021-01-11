@@ -1,0 +1,55 @@
+I"
+<!-- site_tags: Computer Science,Algorithms -->
+
+<!-- tag_words: AlgorithmsComputer Science -->
+
+<div id="tags">
+  <ul class="tag-box inline">
+  
+    <li><small><a href="#algorithms-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Algorithms <span>1</span></a></small></li>
+  
+    <li><small><a href="#computer-science-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Computer Science <span>1</span></a></small></li>
+  
+  </ul>
+
+
+
+
+  <h3 id="algorithms-ref">Algorithms</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="computer-science-ref">Computer Science</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+</div>
+:ET

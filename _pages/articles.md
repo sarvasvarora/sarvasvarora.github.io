@@ -19,7 +19,7 @@ comments: false
   <p><i><small>Posted: {{ post.date | date: "%B %-d, %Y"}} Updated: {{ post.modified | date: "%B %-d, %Y"}}</small></i></p>
   {% if post.image.teaser %}
   <figure>
-    <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}{{ post.image.teaser }}"></a>
+    <a href="{{ site.url }}{{ post.url }}"><img src="/images/articles{{ post.image.teaser }}"></a>
   </figure>
   {% endif %}
   <p style="margin-block-end: 0;">{{ post.excerpt | strip_html | truncate: 160 }}</p>

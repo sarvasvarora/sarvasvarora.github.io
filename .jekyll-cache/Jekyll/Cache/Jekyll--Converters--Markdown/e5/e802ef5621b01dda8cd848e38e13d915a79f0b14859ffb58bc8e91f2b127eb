@@ -1,0 +1,242 @@
+I"Xt<p>You might be “playing Google Chrome” everyday, but have you thought how it fetches all those webpages when you hit the search button?<br />
+While Goole is an incredibly complex task to replicate, the underlying principles of a search engine remain the same: it crawls the webpages, indexes them, and assigns ranks to the webpages based on the ranking algorithm that search engine is using. And when a query is made, it returns the most relevant results based on the ranking of the webpages.</p>
+
+<p>In this article, I’m going to describe all these fundamental processes along with their Python implementation.<br />
+<br />
+The post might be long, but hang tight budd, I promise it will be an interesting take!</p>
+
+<h2 id="step-1-defining-a-pseudo-internet">Step 1: Defining a pseudo internet</h2>
+
+<p>The first hurdle turns out to be creating a database of webpages and their content. Since this is rather a dive into how search engines work and not about how to mine data, I chose to use XML file as a proxy for the internet.<br />
+<br />
+The XML files contains proxy web-pages indicated by the tag name <strong>webpage</strong>. Each web-page contains multiple hyperlinks to other web-pages indicated by the tag <strong>link</strong>. The contents of a web-page is marked using the tag <strong>content</strong>.<br />
+<br />
+Put together, this looks somewhat like</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;test&gt;</span>
+  <span class="nt">&lt;webpage</span> <span class="na">name=</span><span class="s">"www.webpage.com"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">name=</span><span class="s">"www.link1.com"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">name=</span><span class="s">"www.link2.com"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;content</span> <span class="na">value=</span><span class="s">"Just a random webpage"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/webpage&gt;</span>
+<span class="nt">&lt;/test&gt;</span>
+</code></pre></div></div>
+
+<p>I implemented an XML parser utility class that parses such XML files and is used to get relevant links and/or content as required.<br />
+<br />
+In reality, this process of data mining and creating databases is done by what’s called “spiders” in CS jargon. Dw, they’re just programmed bots whose job is to find new webpages and add them to the databse (or update existing webpages on request).<br />
+This process is called crawling, which brings us to the next topic.</p>
+
+<blockquote>
+  <p>Fun fact: Bots will not find everything on the web. If there are no links to a page then it is basically invisible to search engines. If it is a web page that requires a password, or is generated as a results to a query, it will never be stored in a search engine. Those webpages that will never be searched are called deep web or the invisible web.</p>
+</blockquote>
+
+<h2 id="crawling-and-indexing---let-the-game-begin">Crawling and Indexing -– let the game begin</h2>
+
+<p>Now that we have something set up, we can start working on the main thing.<br />
+<br />
+As described above, <strong>crawling</strong> is the process where bots crawl the internet and collect information from webpages. By following links from a web page to another, the spiders find new content.<br />
+<br />
+Once a page is crawled, the data contained in the page is processed and indexed. <strong>Indexing</strong> is the process of storing and organizing the content found during the crawling.<br />
+It generally involves associating words or other tokens to a list of webpages containing them. It also includes collecting links to other webpages that a given webpage contains (this is an important thing, and we’ll come back to it’s use later).<br />
+<br />
+We store all this data in a graph data structure named <strong>WebGraph</strong>. Each vertex of the graph represents a webpage and of the data type <strong>WebVertex</strong> that stores metadata for a webpage such as its content. Whenever we encounter a link in a webpage, we create a directed edge from that webpage to the webpage that is being linked to.<br />
+Remember that we are not crawling the actual internet, but the pseudo internet (XML file) we created for this purpose.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">crawl_and_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="s">"""Crawl and index the web, starting from the given URL.
+    Args:
+        url (str): URL of the webpage to start indexing from
+    """</span>
+    <span class="c1"># If the vertex with the given URL already exists AND has already been visited
+</span>    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_vertex</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_visited</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+        <span class="k">return</span>
+
+    <span class="c1"># If it didn't exist, it would've been added now
+</span>    <span class="c1"># Set it to visited, and continue crawling
+</span>    <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">set_visited</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+
+    <span class="c1"># Index the current URL
+</span>    <span class="n">words</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">add_word_to_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+
+    <span class="c1"># Crawl the web by visiting the links pointed to by the current URL
+</span>    <span class="n">links</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_links</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_vertex</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">crawl_and_index</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This is basic depth-first graph traversal, and as we traverse the graph, we keep storing the required data, rather keep indexing it, if you will.<br />
+<br />
+The result is a graph of webpages, something like this”</p>
+
+<figure>
+  <img alt="Web Graph" src="/images/articles/2021-01-08-The-hitchhiker's-guide-to-search-engines/web_graph.png" />
+</figure>
+
+<blockquote>
+  <p>Another fun fact: Google has the largest known internet index. Bigtable, a compressed, high performance, proprietary data storage system built on Google File System is used for Google’s web indexing.</p>
+</blockquote>
+
+<h2 id="ranking-the-webpages">Ranking the webpages</h2>
+
+<p>We have the data we need, but how do we determine which webpage is the most relevant result? It’s here that page rankings come into picture.<br />
+<br />
+There might be millions of pages containing a specific word, but some pages are generally more relevant, or authoritative than others. To determine which pages to show in the search results and in what order, search engines use the data collected to perform a ranking.<br />
+<br />
+Using the web graph we just made, we assign rankings to webpages based on these ideas (note that this is a simplified version of the <a href="https://en.wikipedia.org/wiki/PageRank">Google PageRank Algorithm</a>):</p>
+
+<ul>
+  <li>Good web pages are cited by many other pages. If we think about it in terms of the webgraph, this means that we should prefer web pages (i.e. vertices) with a large in-degree.</li>
+  <li>Web pages that link to a large number of other pages are less valuable. In terms of webgraph, this means that we will value less web pages (i.e. vertices) with a large out-degree.</li>
+  <li>A link from a web page is more valuable if the web page is itself a good one. In graph terms, higher the rank of a web page (i.e. vertex), more valuable an in-edge from it would be.</li>
+</ul>
+
+<p>To formulate these ideas, consider \(pr(w)\) to be the page rank of vertex \(w\), \(out(w)\) to be the out-degree of vertex \(w\), and \(w_1, w_2, \cdots, w_n\) to be vertices in the graph that have an out edge going into \(v\). Then the following equation determines the page rank of vertex \(v\):
+\[pr(v) = (1 - d) + d * \left(\dfrac{pr(w_1)}{out(w_1)} + \dfrac{pr(w_2)}{out(w_2)} + \cdots + \dfrac{pr(w_n)}{out(w_n)}\right)\]
+The constant \(d\) is called the damping factor and is added for arcane reason to account for the probability that an imaginary surfer who is randomly clicking on links will eventually stop clicking. I chose \(d = 0.5\).<br />
+<br />
+Now, since \(pr(v)\) is a function of \(pr(w_i)\), we get \(n\) equations in \(n\) variables. Of course, we won’t use linear algebra to do so because gaussian elimination runs in \(O(n^3)\) time.<br />
+Instead, we initialize each \(pr(v_i) = 1\) and calculate new \(pr(v_i)\) for each \(i\) until the values almost become stagnant i.e., they converge. This happens when \(|pr^{k−1}(v_i) − pr^k(v_i)| \lt\ \epsilon\) for all \(i\), where \(pr^j(v_i)\) represents the computation of \(pr(v_i)\) in the \(j^{th}\) iteration, and \(\epsilon\) is the input to the method. In simple words, the new values don’t differ from the old values by more than \(\epsilon\).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">_compute_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vertices</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+    <span class="s">"""Complete one iteration of ranking webpages.
+
+    Args:
+        vertices (List[str]): List of webpages to rank
+
+    Returns:
+        List[float]: List of ranks of respective webpages
+    """</span>
+    <span class="n">DAMPING_FACTOR</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+    <span class="n">new_prV</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_page_rank</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">vertices</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">vertices</span><span class="p">):</span>
+        <span class="n">W</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_edges_into</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+        <span class="n">prW_outW</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">W</span><span class="p">:</span>
+            <span class="n">j</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+            <span class="n">prW</span> <span class="o">=</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">outW</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_out_degree</span><span class="p">(</span><span class="n">vertices</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">prW_outW</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">prW</span> <span class="o">/</span> <span class="n">outW</span><span class="p">)</span>
+
+        <span class="n">_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">prW_outW</span><span class="p">)</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">DAMPING_FACTOR</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">DAMPING_FACTOR</span> <span class="o">*</span> <span class="n">_sum</span><span class="p">)</span>
+        <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">rank</span>
+
+    <span class="k">return</span> <span class="n">new_prV</span>
+
+<span class="k">def</span> <span class="nf">assign_page_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">EPSILON</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="s">"""Assign page ranks to the crawled webpages.
+
+    Args:
+        EPSILON (float): Epsilon value to control the convergence
+    """</span>
+    <span class="n">prV</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">()))]</span>
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">new_prV</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">_compute_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">())</span>
+        <span class="n">converged</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">EPSILON</span><span class="p">):</span>
+                <span class="n">converged</span> <span class="o">=</span> <span class="bp">False</span>
+                <span class="k">break</span>
+
+        <span class="k">if</span> <span class="n">converged</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
+            <span class="n">prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">set_page_rank</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">()[</span><span class="n">i</span><span class="p">],</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>The above code does exactly what we formulated. The <code class="highlighter-rouge">_compute_ranks</code> is a private method (jokes, Python has no access specifiers, but let’s respect that leading underscore) that carries out a single iteration of computing new \(pr(v_i)\) from old \(pr(v_i)\). <br />
+Then, we check for convergence in the <code class="highlighter-rouge">assign_page_ranks</code> method and update values, or break out of the loop accordingly. Oh, and this method also initializes the \(pr(v_i) = 1\) for each \(i\).<br />
+<br />
+Finally, this algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page. We are ready to get those query results now!</p>
+
+<h2 id="querying-the-search-engine">Querying the search engine</h2>
+
+<p>This is the part that is the most visible to an end user. The search console. Here, the search engine takes in the user query and returns the relevant webpages, ranked in descending order of their page ranks.<br />
+<br />
+The actual process is a bit more complicated though, and there are various types of search patterns that can be performed, some of them being:</p>
+
+<ul>
+  <li>Standard keyword searching: here, just the keywords in the search query need to be matched.</li>
+  <li>Phrase searching: this involves looking for exact matches with the query.</li>
+  <li>Wildcards: these involve more complicated patterns such as “+” sign to include a word and “–” to not.</li>
+</ul>
+
+<p>I implemented the standard search and the phrase search. Note that in reality, search engines ignore stop words (i.e., frequently occuring words that don’t impart much meaning to the query, such as “a”, “and”, “of”, etc.). Here, these words are not ignored.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">phrase_query</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="s">"""Query the search engine.
+
+    Args:
+        query (str): Query phrase or keyword
+        phrase_query (bool, optional): Whether exact phrase matching should be done. Defaults to False.
+
+    Returns:
+        List[str]: List of webpages, arranged in descending order of their page ranks
+    """</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="p">.</span><span class="n">strip</span><span class="p">(</span><span class="s">' ,.</span><span class="se">\n</span><span class="s">;:</span><span class="se">\'\"\t</span><span class="s">!@#$%^&amp;*()_-=+[]?&lt;&gt;'</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">query</span><span class="p">.</span><span class="n">split</span><span class="p">()]</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="s">''</span><span class="p">]</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># Initialize urls
+</span>
+    <span class="k">if</span> <span class="n">phrase_query</span> <span class="ow">is</span> <span class="bp">False</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+            <span class="n">urls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">urls</span> <span class="o">+</span> <span class="n">tmp_urls</span><span class="p">))</span> <span class="c1"># Take union
+</span>    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+            <span class="n">urls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tmp_urls</span><span class="p">),</span> <span class="n">urls</span><span class="p">))</span> <span class="c1"># Take intersection
+</span>
+            <span class="c1"># break if at any point the intersection becomes empty. Reduces unnecessary computation
+</span>            <span class="k">if</span> <span class="n">urls</span> <span class="o">==</span> <span class="p">[]:</span>
+                <span class="k">break</span>
+
+        <span class="n">phrase</span> <span class="o">=</span> <span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">re</span><span class="p">.</span><span class="n">findall</span><span class="p">(</span><span class="n">phrase</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]:</span>
+                <span class="n">urls</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+    <span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_page_rank</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">]</span>
+    <span class="n">urls_with_rank</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">urls</span><span class="p">,</span> <span class="n">ranks</span><span class="p">))</span>
+
+    <span class="c1"># Sort wrt to ranks (2nd element of tuples) and arrange in descending order
+</span>    <span class="n">urls_with_rank</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">urls_with_rank</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>For the normal keyword search, the method simply goes over each word in the query and forms a union of indexed webpages that contain the words. The final list of URLs contains webpages irrespective of the fact that they contain a just single word of the query, or multiple words.<br />
+<br />
+For phrase search, the exact phrase needs to be present in the webpage to be considered as relevant. To do this, we first take the webpages that contain ALL the words in the query (this is intersection, as opposed to union previously). This step is done purely to save on some computation since the final webpages anyways need to have all the words from the query.<br />
+Once we get these URLs, we use regex to find exact matches and filter the URLs accordingly.</p>
+
+<blockquote>
+  <p>Yet another fun fact: Search engines use different spiders to crawl and use different proprietary algorithms to index the data. Each index is therefore a search engine’s representation of how they see the web. Also the algorithms to rank and search the data are different, so every search engine has its own approach to finding what you’re trying to find. Also, personalisation (courtesy of all those trackers that the good ol’ Safari blocks for you) adapts the search to a specific computer/user. The results may be based on your geographical location, what else you’ve searched for, and what results were preferred by other users searching for the same thing, for example. Search engines might use and weigh all these factors in a unique way, which will lead to different search results.</p>
+</blockquote>
+
+<p>If you’ve been reading this far, congrats! You now know how search engines work and hopefully motivated enough to explore more about them :)</p>
+
+<p>Feel free to explore the repository for this post <a href="https://github.com/sarvasvarora/beek-it">here</a>.<br />
+<br />
+I’d appreciate any constructive feedback on this post, and am open for discusisons. Feel free to drop suggestions for future posts.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<ul>
+  <li>The COMP 250 final assignment, which motivated major part of this post and project.</li>
+  <li>Wikipedia article on <a href="https://en.wikipedia.org/wiki/PageRank">PageRank</a></li>
+  <li>Some “fun facts” <a href="https://lifepacific.libguides.com/c.php?g=155121">here</a></li>
+</ul>
+:ET
