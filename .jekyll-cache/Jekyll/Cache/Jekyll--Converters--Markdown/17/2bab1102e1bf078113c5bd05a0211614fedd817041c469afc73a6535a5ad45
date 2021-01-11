@@ -1,0 +1,33 @@
+I"�<h2 id="about-the-project">About the project</h2>
+<p>This was a project I did while I was getting started with Machine Learning. <a href="https://codingblocks.com">Coding Blocks</a> had a competition where we had to classify Pokémons based on their names. It’s a multiclass classification problem and the Pokémons need to be classified as either Pikachu, Bulbasaur, or Charmander.<br />
+<br />
+I learned how to implement the naïve KNN algorithm from scratch and use the Numpy for image processing. The biggest challenge was getting used to working with images as I had never done that before.</p>
+
+<figure class="third ">
+	 
+	<a href="/images/projects/2019-07-31-Pokemon-Classifier/pikachu.jpg" title="Pikachu">
+		<img src="/images/projects/2019-07-31-Pokemon-Classifier/pikachu.jpg" alt="Pikachu" />
+	</a>
+	  
+	<a href="/images/projects/2019-07-31-Pokemon-Classifier/bulbasaur.jpg" title="Bulbasaur">
+		<img src="/images/projects/2019-07-31-Pokemon-Classifier/bulbasaur.jpg" alt="Bulbasaur" />
+	</a>
+	  
+	<a href="/images/projects/2019-07-31-Pokemon-Classifier/charmander.jpg" title="Charmander">
+		<img src="/images/projects/2019-07-31-Pokemon-Classifier/charmander.jpg" alt="Charmander" />
+	</a>
+	  
+	<figcaption>
+		<p>Some images from each category in the dataset</p>
+
+	</figcaption>
+	
+</figure>
+
+<p>&lt;!– <figure>
+    <img alt="Pikachu" src="/images/projects/2019-07-31-Pokemon-Classifier/pikachu.jpg" /></figure></p>
+
+<p>These are a few pictures from each category in the dataset provided. I scored an accuracy of over 97% in the final submission.<br />
+<br />
+The github repository for the same can be found <a href="https://github.com/sarvasvarora/PokeDex-Coding-Blocks-Challenge--KNN-Classifier">here</a>.</p>
+:ET
