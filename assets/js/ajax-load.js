@@ -3,21 +3,16 @@ $(document).on('ready', function(){
 })
 
 $(window).on("popstate", function(e) {
-    NProgress.start()
     $('title').html(e.originalEvent.state.title)
     $('#content').html(e.originalEvent.state.content)
     updateExternals()
     bindLinks()
-    NProgress.done()
 })
 
 function bindLinks(){
     $("a[href^='/']").on('click', function(e){
         // Stop link from activating
         e.preventDefault()
-
-        // Start the NProgress bar
-        NProgress.start()
 
         // Get the URL to load
         url = $(this).attr('href')
@@ -42,9 +37,6 @@ function bindLinks(){
 
             updateExternals()
 
-            // Make NProgress finish
-            NProgress.done()
-
             // Re Bind to all the links on the page
             bindLinks()
         })
@@ -68,3 +60,13 @@ function updateExternals(){
         }
     }
 }
+
+NProgress.start();
+NProgress.set(0.4);
+// Increment 
+var interval = setInterval(function() { NProgress.inc(); }, 1000);
+// Clear when window is loaded
+$(window).on("load", function(){
+    NProgress.done();
+    clearInterval(interval);
+});
