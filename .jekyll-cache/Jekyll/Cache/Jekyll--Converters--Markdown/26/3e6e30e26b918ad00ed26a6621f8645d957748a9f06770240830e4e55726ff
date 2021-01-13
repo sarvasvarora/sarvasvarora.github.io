@@ -1,0 +1,31 @@
+I"�<p>Games are fun, no doubt. But what’s even more fun is to code them!<br />
+<br />
+While learning Javascript, I felt that the fun stuff lies in projects that can be interacted with, and games were a no-brainer to build. Here are the few that I recreated.</p>
+
+<h2 id="simon">Simon</h2>
+<p>Yes, it’s the OG Simon game, which probably led us all to bang our head remembering all those permutations of the colors.</p>
+
+<figure class="">
+	<img src="/images/projects/2020-12-01-Recreating-classic-games/simon.png" alt="Simon" /><figcaption>
+		<p>Screnshot of the game.</p>
+
+	</figcaption></figure>
+
+<p>The github repo for this can be found <a href="https://github.com/sarvasvarora/simon-game">here</a> and the game can be played <a href="https://sarvasvarora.me/simon-game">here</a>.</p>
+
+<h2 id="snake-game">Snake Game</h2>
+<p>This was one of my favorites when I used to have one of those Nokia keypad phones, and no wonder I implemented this.</p>
+
+<figure class="">
+	<img src="/images/projects/2020-12-01-Recreating-classic-games/snake-game.png" alt="Snake Game" /><figcaption>
+		<p>Screnshot of the game.</p>
+
+	</figcaption></figure>
+
+<p>The github repo for this can be found <a href="https://github.com/sarvasvarora/snake-game">here</a> and the game can be played <a href="https://sarvasvarora.me/snake-game">here</a>. Quick tip, use arrow keys ;)</p>
+
+<h2 id="scrabble-game">Scrabble Game</h2>
+
+<iframe src="https://sarvasvarora.me/snake-game" style="width:10">
+</iframe>
+:ET

@@ -8,7 +8,7 @@ tags: [Machine Learning, Computer Vision]
 comments: true
 share: true
 image:
-  teaser: 2019-07-31-Pokemon-Classifier/pokemon.jpg
+  teaser: 2019-07-31-Pokemon-Classifier/teaser.jpg
 gallery:
   - url: /images/projects/2019-07-31-Pokemon-Classifier/pikachu.jpg
     image_path: /images/projects/2019-07-31-Pokemon-Classifier/pikachu.jpg
