@@ -1,0 +1,12 @@
+I"�<p>Beek-it is a simple search engine that was inspired by the final project of one of my courses. It builds upon the graph data structure. It uses depth-first traversal to crawl and index the webpages, which are stored in an XML format DB and serve as a proxy for actual webpages for this project.<br />
+<br />
+For querying, I implemented standard keyword search as well as exact-phrase search (ignores punctuation). The query method returns the relevant webpages in descending order of their page ranks.<br />
+<br />
+I wrote a blog post which goes in depth of fundamentals of how search engines work, and also explains this project in more detail. The post can be accessed <a href="http://localhost:4000/article/The-hitchhiker's-guide-to-search-engines/">here</a>.</p>
+
+<blockquote>
+  <p>The name of this search engine is a portmanteau of “seek” — which has the obvious meaning to search for something, exactly what a search engine does – and “bee” – which is due to the fact that this search engine is inspired by the final project of COMP 250 course and our first assignment was to create a bee vs hornet tower defence game!</p>
+</blockquote>
+
+<p>Thttps://github.com/sarvasvarora/beek-it</p>
+:ET

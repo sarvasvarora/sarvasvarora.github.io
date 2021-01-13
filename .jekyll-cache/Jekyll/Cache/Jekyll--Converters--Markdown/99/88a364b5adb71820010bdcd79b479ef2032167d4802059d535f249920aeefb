@@ -1,0 +1,96 @@
+I"�
+<h2>2021</h2>
+
+<h3><a href="http://localhost:4000/project/Beek-it/" title="beek-it">beek-it</a></h3>
+<p><i><small>Posted: January 12, 2021 Updated: January 13, 2021</small></i></p>
+
+<p style="margin-block-end: 0;">A simple search engine based on Google PageRank algorithm base</p>
+
+<div class="tags">
+  <ul class="tag-box inline">
+  <li><strong style="padding-right: 5px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong></li>
+  
+  <li><small><a href="/tags/#programming-ref">Programming</a></small></li>
+  
+  </ul>
+  </div>
+
+<h2>2020</h2>
+
+<h3><a href="http://localhost:4000/project/PathLink/" title="PathLink">PathLink</a></h3>
+<p><i><small>Posted: September 15, 2020 Updated: January 13, 2021</small></i></p>
+
+<figure>
+    <a href="http://localhost:4000/project/PathLink/"><img src="/images/projects/2020-09-15-PathLink/teaser.png" /></a>
+  </figure>
+
+<p style="margin-block-end: 0;">Automating student-group making process using Machine Learning.</p>
+
+<div class="tags">
+  <ul class="tag-box inline">
+  <li><strong style="padding-right: 5px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong></li>
+  
+  <li><small><a href="/tags/#machine-learning-ref">Machine Learning</a></small></li>
+  
+  <li><small><a href="/tags/#clustering-ref">Clustering</a></small></li>
+  
+  </ul>
+  </div>
+
+<h3><a href="http://localhost:4000/project/Weather-webapp/" title="How's the weather?">How's the weather?</a></h3>
+<p><i><small>Posted: June 15, 2020 Updated: January 13, 2021</small></i></p>
+
+<p style="margin-block-end: 0;">A web app that shows the current weather based on user's location.</p>
+
+<div class="tags">
+  <ul class="tag-box inline">
+  <li><strong style="padding-right: 5px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong></li>
+  
+  <li><small><a href="/tags/#web-development-ref">Web Development</a></small></li>
+  
+  </ul>
+  </div>
+
+<h3><a href="http://localhost:4000/project/Recreating-classic-games/" title="Recreating popular games">Recreating popular games</a></h3>
+<p><i><small>Posted: June 1, 2020 Updated: January 12, 2021</small></i></p>
+
+<figure>
+    <a href="http://localhost:4000/project/Recreating-classic-games/"><img src="/images/projects/2020-06-01-Recreating-classic-games/teaser.jpg" /></a>
+  </figure>
+
+<p style="margin-block-end: 0;">A collection of small games I programmed while learning programming.</p>
+
+<div class="tags">
+  <ul class="tag-box inline">
+  <li><strong style="padding-right: 5px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong></li>
+  
+  <li><small><a href="/tags/#web-development-ref">Web Development</a></small></li>
+  
+  <li><small><a href="/tags/#programming-ref">Programming</a></small></li>
+  
+  </ul>
+  </div>
+
+<h2>2019</h2>
+
+<h3><a href="http://localhost:4000/project/Pokemon-Classifier/" title="Pokémon Classification">Pokémon Classification</a></h3>
+<p><i><small>Posted: July 31, 2019 Updated: January 12, 2020</small></i></p>
+
+<figure>
+    <a href="http://localhost:4000/project/Pokemon-Classifier/"><img src="/images/projects/2019-07-31-Pokemon-Classifier/teaser.jpg" /></a>
+  </figure>
+
+<p style="margin-block-end: 0;">Multiclass Pokémon classification using the KNN algorithm.</p>
+
+<div class="tags">
+  <ul class="tag-box inline">
+  <li><strong style="padding-right: 5px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong></li>
+  
+  <li><small><a href="/tags/#machine-learning-ref">Machine Learning</a></small></li>
+  
+  <li><small><a href="/tags/#computer-vision-ref">Computer Vision</a></small></li>
+  
+  </ul>
+  </div>
+
+:ET

@@ -1,0 +1,17 @@
+I"j<p>This was a project built at the first ever hackathon I attended (virtually tho). It was organized by BOLT club at McGill in September 2020.<br />
+<br />
+Some courses in my first semester consisted of formation of groups so that students can collaborate together and have more of an in-class like experience, while being Zoom ‘24.<br />
+I feel that professors and/or TAs end up spending a lot of time in making groups if they do everything manually, or if they randomly do the group-making process, the groups usually become uneven and students don’t end up enjoying the course.<br />
+<br />
+So, the solution was to kill two birds with a single arrow (SIKE, just figuratively) and make an app that does both: automates the process as well as keep the team/group chemistry as best as it can!<br />
+PathLink is an ML-powered functional prototype that automates the process of making groups based on student’s preferences, time-zones, etc. It uses the <strong>K-Means algorithm</strong> to form clusters in the data. The app itself is built using the <a href="https://www.streamlit.io">Streamlit</a> Python library and uses <a href="https://plotly.com">Plotly</a> to display visualizations.<br />
+<br />
+Currently, PathLink falls into the typical hackathon-project category and is just designed to work on the data type specifically collected for the project.<br />
+However, in future, I aim to make it scalable and able to fit to more generalized form datasets so that the targeted users can actually use it.<br />
+<br />
+Following is a demo of how the application works.</p>
+
+<p>{}</p>
+
+<p>https://github.com/sarvasvarora/pathlink</p>
+:ET

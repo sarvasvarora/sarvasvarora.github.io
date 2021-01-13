@@ -1,0 +1,229 @@
+I"�
+<!-- site_tags: Machine Learning,Computer Vision,Web Development,Algorithms,Clustering,Computer Science,Self Reflection,Programm -->
+
+<!-- tag_words: AlgorithmsClusteringComputer ScienceComputer VisionMachine LearningProgrammSelf ReflectionWeb Development -->
+
+<div id="tags">
+  <ul class="tag-box inline">
+  
+    <li><small><a href="#algorithms-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Algorithms <span>3</span></a></small></li>
+  
+    <li><small><a href="#clustering-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Clustering <span>1</span></a></small></li>
+  
+    <li><small><a href="#computer-science-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Computer Science <span>1</span></a></small></li>
+  
+    <li><small><a href="#computer-vision-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Computer Vision <span>1</span></a></small></li>
+  
+    <li><small><a href="#machine-learning-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Machine Learning <span>2</span></a></small></li>
+  
+    <li><small><a href="#programm-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Programm <span>1</span></a></small></li>
+  
+    <li><small><a href="#self-reflection-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Self Reflection <span>1</span></a></small></li>
+  
+    <li><small><a href="#web-development-ref"><i class="fa fa-tags" style="padding-right: 3px;"></i>Web Development <span>2</span></a></small></li>
+  
+  </ul>
+
+
+
+
+  <h3 id="algorithms-ref">Algorithms</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Beek-it/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Beek It
+           <span class="entry-date">
+              <time datetime="2021-01-12T00:00:00+05:30" itemprop="datePublished">
+                January 12, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Recreating-classic-games/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Recreating popular games
+           <span class="entry-date">
+              <time datetime="2020-06-01T00:00:00+05:30" itemprop="datePublished">
+                June 01, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="clustering-ref">Clustering</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/PathLink/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          PathLink
+           <span class="entry-date">
+              <time datetime="2020-09-15T00:00:00+05:30" itemprop="datePublished">
+                September 15, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="computer-science-ref">Computer Science</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/article/The-hitchhiker's-guide-to-search-engines/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          The hitchhiker's guide to search engines
+           <span class="entry-date">
+              <time datetime="2021-01-08T00:00:00+05:30" itemprop="datePublished">
+                January 08, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="computer-vision-ref">Computer Vision</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Pokemon-Classifier/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Pokémon Classification
+           <span class="entry-date">
+              <time datetime="2019-07-31T00:00:00+05:30" itemprop="datePublished">
+                July 31, 2019
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="machine-learning-ref">Machine Learning</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/PathLink/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          PathLink
+           <span class="entry-date">
+              <time datetime="2020-09-15T00:00:00+05:30" itemprop="datePublished">
+                September 15, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Pokemon-Classifier/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Pokémon Classification
+           <span class="entry-date">
+              <time datetime="2019-07-31T00:00:00+05:30" itemprop="datePublished">
+                July 31, 2019
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="programm-ref">Programm</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Beek-it/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Beek It
+           <span class="entry-date">
+              <time datetime="2021-01-12T00:00:00+05:30" itemprop="datePublished">
+                January 12, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="self-reflection-ref">Self Reflection</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/deet/My-decision-to-start-blogging-and-why-you-should-too/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          My decision to start blogging and why you should too!
+           <span class="entry-date">
+              <time datetime="2021-01-10T00:00:00+05:30" itemprop="datePublished">
+                January 10, 2021
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+
+
+  <h3 id="web-development-ref">Web Development</h3>
+  <ul class="posts">
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Weather-webapp/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          How's the weather?
+           <span class="entry-date">
+              <time datetime="2020-06-15T00:00:00+05:30" itemprop="datePublished">
+                June 15, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+    <li itemscope="">
+        <a class="author-social" href="/project/Recreating-classic-games/" style="border-bottom: none;">
+        <i class="fas fa-external-link-alt"></i>
+          Recreating popular games
+           <span class="entry-date">
+              <time datetime="2020-06-01T00:00:00+05:30" itemprop="datePublished">
+                June 01, 2020
+              </time>
+          </span> 
+        </a>
+    </li>
+    
+  </ul>
+  
+</div>
+:ET
