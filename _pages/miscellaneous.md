@@ -11,9 +11,7 @@ image:
     credit:
     creditlink:
 ---
-
-# WIP 
-<!-- #TODO: MOOCs, Resources, Notes, Following list -->
+<!-- #TODO: MOOCs, Resources, Following list -->
 
 {% for post in site.categories.misc %}
 
