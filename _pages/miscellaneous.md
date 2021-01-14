@@ -1,6 +1,6 @@
 ---
 layout: post-index
-permalink: /miscellaneous/
+permalink: /misc/
 title: Miscellaneous
 tagline: Some misc. stuff I'd like sharing ;)
 tags: [misc]
