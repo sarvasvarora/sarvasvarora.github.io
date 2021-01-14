@@ -51,7 +51,7 @@ I am proficient in writing markdowna and LaTeX, and using productivity apps like
 ## Supplements
 
 Please browse this website for more information on me. My socials are linked on the sidebar.
-You can also grab my resumé <a href="/images/Sarvasv_Arora_Resume.pdf" target="resume" onclick="show()">here</a>.
+You can also grab my resumé <a href="/docs/Sarvasv_Arora_Resume.pdf" target="resume" onclick="show()">here</a>.
 
 <iframe name="resume" frameborder="0" style="width:100%;height:44rem;display:none;"></iframe>
 <script type="text/javascript">
