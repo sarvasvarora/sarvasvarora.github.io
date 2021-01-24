@@ -35,7 +35,7 @@ If you spot any mistakes, please don't hesitate to contact me ;)
   <hr>
   <li>
     <strong>
-        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/70eac099766b453aa57be1bc87e094f8?v=78d368f666484ff395da2c2ba896421a"> <i class="fas fa-external-link-alt"></i> COMP 252: Introduction to Computer Science</a>
+        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/70eac099766b453aa57be1bc87e094f8?v=78d368f666484ff395da2c2ba896421a"> <i class="fas fa-external-link-alt"></i> COMP 252: Honors Data Structures and Algorithms</a>
     </strong>
   <p><small>Currently taking this course; taught by Prof. Claude Crépeau. Notes are a constant WIP.</small></p>
   </li>
