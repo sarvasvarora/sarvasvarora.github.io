@@ -7,51 +7,48 @@ comments: false
 ---
 ## Education
 
-#### McGill University (September 2020 - Present) <br> GPA: 4.0
+#### McGill University (September 2020 - Present) <br> GPA: 3.86
 
-I am currently pursuing my Bachelor's degree at McGill University as a Computer Science major, along with a minor in Statistics. My current coursework includes Applied Linear Algebra, Probability, Programming languages and Paradigms, Intro to Computer Architecture, and Data Structures and Algorithms.  
-I have also participated in a few hackathons such as BOLT McGill Hackathon, and McHacks.
+I am currently pursuing my Bachelor's degree at McGill University as a Computer Science major, along with a Statistics minor. My current coursework includes Distributed Systems, Parallel Computing, Applied Robotics, and Applied Regression.  
+Apart from that, I'm involved with the McGill Computer Science Undergraduate Society (CSUS) as the VP Internal, where I am responsible for organizing the Industry Mentorship Program, and designing CSUS stickers and merch.
 
 #### Banasthali Public School (April 2018 - March 2020) <br> GPA: 95.6%
 
-I graduated high school from Banasthali Public School as a school topper. Here, I was involved with the CS club, and participated in several olympiads/quizzes and achieved good results in a few.
-My senior year research projects were related to analyzing the affect of various bleaching agents on diffenrent types of fabrics; and investigating changes in magnetic behaviour of permanent magnets in extreme tempretures.
+I graduated high school from Banasthali Public School as the class valedictorian. I was also involved with the school's CS club, and participated in several olympiads/quizzes (achieved good results in a few).
+My senior year research projects involved analyzing the affect of various bleaching agents on different types of fabrics and investigating changes in magnetic behavior of permanent magnets subject to extreme temperatures.
 
 ## Relevant Work Experience
 
-#### The NYAS Junior Academy (December 2019 - December 2020)
+#### SDE Intern at AWS Simple Workflow
 
-This is a competitive entry program by The New York Academy of Sciences for students of age 13-18 years.
-I got to work on a research project along with four other exceptional people. We proposed our solution on creating a smart home focussed on solving current healthcare challenges. The final deliverable is available [here](https://drive.google.com/file/d/1NNBmqpXMWB0oPy88CR95lGA8QtNET1Fw/view?usp=sharing).  
-Being a member, I also had the opportunity to attend several informative talks and workshops conducted by NYAS.
+This summer, I worked at [AWS SimpleWorkflow (SWF)](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-welcome.html), where I onboarded over a hundred SWF Ops scripts (used in handling customer requests, SEV2s, etc.) onto an internal AWS tool, making my team’s operations more efficient and concise as compared to the previous stop-gap solution. I also provisioned the necessary resources (pipeline, Apollo environments, Clusters, etc.) to deploy my project to production, and increased the ops test coverage by around 30%. Further, I wrote runbooks/documentation for new tools, automation script to update existing runbooks with the new command syntax, and an extensive tester script to automate ops tools testing.
+I also worked with AWS CloudFormation on a non-swimlane task, which I took up as an additional challenge and opportunity to learn more about the SWF infrastructure.
 
-## Honors/Awards
+#### Teaching Assistant (Introduction to Software Systems)
 
-I've won a few awards too. Some of them are:
+I've been working as the TA for COMP 206 (Introduction to Software Systems) for three semesters. My responsibilities include facilitating office hours, grading assignments and exams, and monitoring discussion boards.
 
--   James McGill Prestige scholarship at McGill. This was offered to me for exemplary academic and extracurricular achievement in high school.
--   Full tuition merit scholarships at UT Dallas, Michigan State University, The University of Arizona, and Aalto University (Finland). [Didn't accept]
--   AP Scholar with Honor for scoring 3 or higher in four or more AP exams.
--   Junior Science Talent Search Examination (JSTSE) scholarship from the Government of Delhi. This is offered to the top 100 rankers (~20000 participants). I ranked 27<sup>th</sup>.
+#### VP Internal at the Computer Science Undergraduate Society (CSUS)
 
-## Skills
+As the VP Internal for [CSUS](http://mcgill-csus.ca/) this year, I spearhead the industry mentorship program, bringing together a team of 15 industry professionals to closely mentor a pool of over 50 McGill CS students over the course of a semester on building technical skills essential to thrive in the tech industry.
+I am also responsible for designing CSUS stickers and merch, and organizing the annual sales.
 
-#### Programming Languages
+#### Development Coordinator at HackMcGill
 
-I often program in Python and Java. I am also familiar with C/C++, JavaScript, shell scripting, git, ~~HTML/CSS~~ and have recently started getting my hands dirty with OCaml.
+I'm also working on the dev team of [HackMcGill](https://www.mchacks.ca/), the organization behind McHacks, one of the largest hackathons in Canada. I maintain the hackathon website, create applicant screening tools for the backend API leading to smoother internal operations.
 
-#### ML stuff
+#### Research Intern at [DMaS Lab](https://dmas.lab.mcgill.ca/), McGill University
 
-I have always enjoyed learning Math and have so far received formal education in Linear Algebra, Multivariable Calculus and Probability. Due to this, I've been able to self-learn stuff about machine learning through MOOCs. I mostly use the Tensorflow, Keras and SciKit Learn for ML projects I've indulged in so far. I'm currently exploring sequence models and the field of NLP.
+Research on the application of deep learning NLP methods in the domain of authorship analysis. I updated the old ICWSM12 Twitter dataset to a new custom dataset with millions of Tweets, scraped using [twint](https://github.com/twintproject/twint) and [scweet](https://github.com/Altimis/Scweet) libraries, and the Twitter API.
 
-#### Office Suit
+#### [SPARK](https://spark.iitr.ac.in/) Reseach Internship at IIT Roorkee
 
-I am proficient in writing markdowna and LaTeX, and using productivity apps like Notion.
+I guided the previous research of bit-flip attack on image classification models to the under-explored domain of NLP models like LSTM, BERT and RoBERTa by developing custom model layers and reformulating the existing code for the adversarial attack. Refined the attack dynamics, further speeding up the adversarial attack by as much as 15-20% in some cases.
 
-## Supplements
+## Etc.
 
 Please browse this website for more information on me. My socials are linked on the sidebar.
-You can also grab my resumé <a href="/docs/Sarvasv_Arora_Resume.pdf" target="resume" onclick="show()">here</a>.
+You can also grab my resume <a href="/docs/Sarvasv_Arora_Resume.pdf" target="resume" onclick="show()">here</a>.
 
 <iframe name="resume" frameborder="0" style="width:100%;height:44rem;display:none;"></iframe>
 <script type="text/javascript">

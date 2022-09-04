@@ -9,7 +9,7 @@ disqus_shortname: sarvasvarora
 # Owner/author information
 owner:
   name:           Sarvasv Arora
-  avatar:         author-images/sarvasv.jpg
+  avatar:         author-images/sarvasv.png
   status:         Contemplatin' and vibin' ✨✔️
   bio:            Computer Science and Statistics at McGill University
   location:       Montreal via New Delhi
@@ -46,8 +46,6 @@ links:
     url: /readings/
   - title: Miscellaneous # stuff like MOOCs, resources, notes, etc.
     url: /misc/
-  - title: FAQs # FAQs about me and this website
-    url: /faqs/
   - title: Tags Archive # all the posts at one place, organized by tags
     url: /tags/ 
   - title: <i class="fab fa-searchengin fa-lg"></i> # search page

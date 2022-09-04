@@ -1,0 +1,34 @@
+I"<h2 id="सर्वस्व-अरोड़ा">सर्वस्व अरोड़ा</h2>
+
+<figure>
+    <img src="/images/author-images/sarvasv-as-a-kid.jpg" alt="test" />
+    <figcaption>Me @4 with my sister @2 (in background: the Taj Mahal Palace Hotel)</figcaption>
+</figure>
+
+<h3 id="about-me">About me</h3>
+
+<p>Hello, world! I’m a third year student at McGill University, studying Computer Science and Statistics. 
+<br />
+My academic interests include distributed and large scale systems, applied machine learning, parallel computing, backend development, and shell scripting. This semester, I’m also exploring robotics and learning ROS.
+<br />
+When I’m not grinding assignments right before the deadline or converting coffee into code, I like to hang out with my friends, bike/walk around the city, go hiking, listen to music, learn about investing, or occasionally hit the gym.
+<br />
+Feel free to ping me for having convos about CS, life as an international student, or pretty much anything else in general!</p>
+
+<h3 id="currently">Currently</h3>
+
+<p>I’m invol</p>
+
+<h3 id="contact-me">Contact me</h3>
+
+<p>For collaborations and advising, please contact me via my Email.<br />
+If you have any questions or critical comments regarding my blog posts, please post your questions under the blog post. If you have any questions regarding my GitHub open source projects, please open an issue ticket in the repository. This will be beneficial for all the readers and save my time for not answering duplicated questions.<br />
+<br />
+Otherwise, my DMs are always open.</p>
+
+<h3 id="credits">Credits</h3>
+
+<p>If you feel that this website seems (kinda) familiar, then you’re not wrong! It’s based on the famous <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a> theme powered by <a href="https://jekyllrb.com">Jekyll</a>.<br />
+<br />
+Big shoutout to <a href="https://jponttuset.cat">Jordi Pont-Tuset</a>; much of the initial code for this website came from his repository, with some major tweaks done by me.</p>
+:ET

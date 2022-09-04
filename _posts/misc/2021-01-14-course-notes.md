@@ -2,7 +2,7 @@
 layout: post
 title: Course Notes
 excerpt: A collection of class notes I made/am making.
-modified: 2021-01-14
+modified: 2022-09-04
 categories: misc
 tags: [Class Notes]
 comments: false
@@ -13,7 +13,7 @@ image:
 Here are some class notes I made. Do note that although I try to keep the notes as correct as possible, these are not proofread. So there's a chance that they might contain some typos.  
 If you spot any mistakes, please don't hesitate to contact me ;)
 
-> Disclaimer: These notes contain screenshots of lecture slides, which belong to the respective professors and I don't own them. If you copy the notes and decide to redistribute them, please don't monitize or share them without appropriate permission.
+> Disclaimer: These notes contain screenshots of lecture slides, which belong to the respective professors (I don't own them). If you copy the notes and decide to redistribute them, please don't monetize or share them without getting the permission to do so.
 
 <ul class="posts">
   <hr>
@@ -35,17 +35,17 @@ If you spot any mistakes, please don't hesitate to contact me ;)
   <hr>
   <li>
     <strong>
-        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/70eac099766b453aa57be1bc87e094f8?v=78d368f666484ff395da2c2ba896421a"> <i class="fas fa-external-link-alt"></i> COMP 252: Honors Data Structures and Algorithms</a>
+        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/f33c8abf287b4a04bfb557957028b3ae?v=5ab2eca1f00d44df8bcf748fbd6b57c5"> <i class="fas fa-external-link-alt"></i> COMP 273: Introduction to Computer Systems</a>
     </strong>
-  <p><small>Currently taking this course; taught by Prof. Claude Crépeau. Notes are a constant WIP.</small></p>
+  <p><small>Course taken in Fall 2020; taught by Prof. Hsiu-Chin Lin and Prof. Paul Kry. Notes are a constant WIP.</small></p>
   </li>
 
   <hr>
   <li>
     <strong>
-        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/f33c8abf287b4a04bfb557957028b3ae?v=5ab2eca1f00d44df8bcf748fbd6b57c5"> <i class="fas fa-external-link-alt"></i> COMP 273: Introduction to Computer Systems</a>
+        <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/70eac099766b453aa57be1bc87e094f8?v=78d368f666484ff395da2c2ba896421a"> <i class="fas fa-external-link-alt"></i> COMP 252: Honors Data Structures and Algorithms</a>
     </strong>
-  <p><small>Currently taking this course; taught by Prof. Hsiu-Chin Lin and Prof. Paul Kry. Notes are a constant WIP.</small></p>
+  <p><small>Course taken in Winter 2021; taught by Prof. Claude Crépeau. Notes are a constant WIP.</small></p>
   </li>
 
   <hr>
@@ -53,6 +53,54 @@ If you spot any mistakes, please don't hesitate to contact me ;)
     <strong>
         <a class="author-social" style="border-bottom: none;" href="https://www.notion.so/sarvasvarora/d0c1683266d74e9dbeaff45ad508670f?v=f8cf280538a34200b7154d3856bc586a"> <i class="fas fa-external-link-alt"></i> COMP 302: Programming Languages and Paradigms</a>
     </strong>
-  <p><small>Currently taking this course; taught by Ivan Miloslavov and Prof. Xuije Si. Notes are a constant WIP.</small></p>
+  <p><small>Course taken in Winter 2021; taught by Ivan Miloslavov and Prof. Xuije Si.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/ecade41f8a974e479c20762326e4ecdc?v=c76c7443233e4e5dbdd5f6d6f2e22c93"> <i class="fas fa-external-link-alt"></i> COMP 303: Software Design</a>
+    </strong>
+  <p><small>Course taken in Winter 2022; taught by Prof. Jin Guo.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/0e693c3feabd45afaa8e30b754c3316b?v=617f1fc73d45415d9fd48369b85e108c"> <i class="fas fa-external-link-alt"></i> COMP 310: Operating Systems</a>
+    </strong>
+  <p><small>Course taken in Winter 2022; taught by Prof. Oana Balmau.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/0ded2d57df4d49dcb06e2fc4a834df56?v=0fb12fd38b684150991d4f565bb19a4a"> <i class="fas fa-external-link-alt"></i> COMP 421: Database Systems</a>
+    </strong>
+  <p><small>Course taken in Winter 2022; taught by Prof. Joseph D'Silva.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/fb63503705d54312a3986968d8b5bb7d?v=3b1f7892617340999a9df8f959c0ac8c"> <i class="fas fa-external-link-alt"></i> ECSE 420: Parallel Computing</a>
+    </strong>
+  <p><small>Currently taking this course; taught by Prof. Zeljko Zilic. Notes are a constant WIP.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/77473a849eb54f5fa9aad60398a8e980?v=2225f952be274fa095dd6ab439c9cfcb"> <i class="fas fa-external-link-alt"></i> COMP 514: Applied Robotics</a>
+    </strong>
+  <p><small>Currently taking this course; taught by Prof. Hsiu-Chin Lin. Notes are a constant WIP.</small></p>
+  </li>
+
+  <hr>
+  <li>
+    <strong>
+        <a class="author-social" style="border-bottom: none;" href="https://sarvasvarora.notion.site/d6289de493b04ece90d6228f49e350d2?v=dc33429aecb14796bea85f7fd4193f16"> <i class="fas fa-external-link-alt"></i> COMP 512: Distributed Systems</a>
+    </strong>
+  <p><small>Currently taking this course; taught by Prof. Bettina Kemme and Prof. Joseph D'Silva. Notes are a constant WIP.</small></p>
   </li>
 </ul>
