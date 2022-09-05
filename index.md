@@ -27,7 +27,7 @@ Feel free to ping me for having convos about CS, life as an international studen
 
 ### Currently
 
-Apart from the usual coursework, I'm involved with the Computer Science Undergrad Society (CSUS) and HackMcGill. I am also trying to learn figure skating.
+Apart from the usual coursework, I'm involved with the Computer Science Undergrad Society (CSUS) and HackMcGill. I am also trying to learn ice skating.
 
 ### Contact me
 
