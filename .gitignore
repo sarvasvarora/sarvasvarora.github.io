@@ -2,3 +2,5 @@ _site
 
 *.bak
 *.bak
+.DS_Store
+Gemfile.lock

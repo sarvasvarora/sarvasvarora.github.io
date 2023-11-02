@@ -17,7 +17,7 @@ image:
 
 ### About me 
 
-Hello, world! I'm a third year student at McGill University, studying Computer Science and Statistics. 
+Hello, world! I'm a fourth year student at McGill University, studying Computer Science and Statistics.
 \
 My academic interests include distributed and large scale systems, applied machine learning, parallel computing, backend development, and shell scripting. This semester, I'm also exploring robotics and learning ROS.
 \

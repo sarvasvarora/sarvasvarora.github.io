@@ -1,4 +1,4 @@
-I"Vt<p>You might be “playing Google Chrome” everyday, but have you thought how it fetches all those webpages when you hit the search button?<br />
+I"�u<p>You might be “playing Google Chrome” everyday, but have you thought how it fetches all those webpages when you hit the search button?<br />
 While Goole is an incredibly complex task to replicate, the underlying principles of a search engine remain the same: it crawls the webpages, indexes them, and assigns ranks to the webpages based on the ranking algorithm that search engine is using. And when a query is made, it returns the most relevant results based on the ranking of the webpages.</p>
 
 <p>In this article, I’m going to describe all these fundamental processes along with their Python implementation.<br />
@@ -43,30 +43,30 @@ It generally involves associating words or other tokens to a list of webpages co
 We store all this data in a graph data structure named <strong>WebGraph</strong>. Each vertex of the graph represents a webpage and of the data type <strong>WebVertex</strong> that stores metadata for a webpage such as its content. Whenever we encounter a link in a webpage, we create a directed edge from that webpage to the webpage that is being linked to.<br />
 Remember that we are not crawling the actual internet, but the pseudo internet (XML file) we created for this purpose.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">crawl_and_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="s">"""Crawl and index the web, starting from the given URL.
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">crawl_and_index</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">Crawl and index the web, starting from the given URL.
     Args:
         url (str): URL of the webpage to start indexing from
-    """</span>
+    </span><span class="sh">"""</span>
     <span class="c1"># If the vertex with the given URL already exists AND has already been visited
-</span>    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_vertex</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_visited</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">add_vertex</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="ow">and</span> <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_visited</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
         <span class="k">return</span>
 
     <span class="c1"># If it didn't exist, it would've been added now
 </span>    <span class="c1"># Set it to visited, and continue crawling
-</span>    <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">set_visited</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</span>    <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">set_visited</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
 
     <span class="c1"># Index the current URL
-</span>    <span class="n">words</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span>    <span class="n">words</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="nf">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">add_word_to_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">add_word_to_index</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 
     <span class="c1"># Crawl the web by visiting the links pointed to by the current URL
-</span>    <span class="n">links</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_links</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span>    <span class="n">links</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="nf">get_links</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_vertex</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">crawl_and_index</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">add_vertex</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">add_edge</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">crawl_and_index</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>This is basic depth-first graph traversal, and as we traverse the graph, we keep storing the required data, rather keep indexing it, if you will.<br />
@@ -102,62 +102,62 @@ The constant \(d\) is called the damping factor and is added for arcane reason t
 Now, since \(pr(v)\) is a function of \(pr(w_i)\), we get \(n\) equations in \(n\) variables. Of course, we won’t use linear algebra to do so because gaussian elimination runs in \(O(n^3)\) time.<br />
 Instead, we initialize each \(pr(v_i) = 1\) and calculate new \(pr(v_i)\) for each \(i\) until the values almost become stagnant i.e., they converge. This happens when \(|pr^{k−1}(v_i) − pr^k(v_i)| \lt\ \epsilon\) for all \(i\), where \(pr^j(v_i)\) represents the computation of \(pr(v_i)\) in the \(j^{th}\) iteration, and \(\epsilon\) is the input to the method. In simple words, the new values don’t differ from the old values by more than \(\epsilon\).</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">_compute_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vertices</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
-    <span class="s">"""Complete one iteration of ranking webpages.
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">_compute_ranks</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">vertices</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+    <span class="sh">"""</span><span class="s">Complete one iteration of ranking webpages.
 
     Args:
         vertices (List[str]): List of webpages to rank
 
     Returns:
         List[float]: List of ranks of respective webpages
-    """</span>
+    </span><span class="sh">"""</span>
     <span class="n">DAMPING_FACTOR</span> <span class="o">=</span> <span class="mf">0.5</span>
 
-    <span class="n">new_prV</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_page_rank</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">vertices</span><span class="p">]</span>
+    <span class="n">new_prV</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_page_rank</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">vertices</span><span class="p">]</span>
 
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">vertices</span><span class="p">):</span>
-        <span class="n">W</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_edges_into</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">vertices</span><span class="p">):</span>
+        <span class="n">W</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_edges_into</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
         <span class="n">prW_outW</span> <span class="o">=</span> <span class="p">[]</span>
 
         <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">W</span><span class="p">:</span>
-            <span class="n">j</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+            <span class="n">j</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
             <span class="n">prW</span> <span class="o">=</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-            <span class="n">outW</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_out_degree</span><span class="p">(</span><span class="n">vertices</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
-            <span class="n">prW_outW</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">prW</span> <span class="o">/</span> <span class="n">outW</span><span class="p">)</span>
+            <span class="n">outW</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_out_degree</span><span class="p">(</span><span class="n">vertices</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">prW_outW</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">prW</span> <span class="o">/</span> <span class="n">outW</span><span class="p">)</span>
 
-        <span class="n">_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">prW_outW</span><span class="p">)</span>
+        <span class="n">_sum</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">prW_outW</span><span class="p">)</span>
         <span class="n">rank</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">DAMPING_FACTOR</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">DAMPING_FACTOR</span> <span class="o">*</span> <span class="n">_sum</span><span class="p">)</span>
         <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">rank</span>
 
     <span class="k">return</span> <span class="n">new_prV</span>
 
-<span class="k">def</span> <span class="nf">assign_page_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">EPSILON</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="s">"""Assign page ranks to the crawled webpages.
+<span class="k">def</span> <span class="nf">assign_page_ranks</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">EPSILON</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">Assign page ranks to the crawled webpages.
 
     Args:
         EPSILON (float): Epsilon value to control the convergence
-    """</span>
-    <span class="n">prV</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">()))]</span>
+    </span><span class="sh">"""</span>
+    <span class="n">prV</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nf">len</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_vertices</span><span class="p">()))]</span>
 
     <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="n">new_prV</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">_compute_ranks</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">())</span>
+        <span class="n">new_prV</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_compute_ranks</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_vertices</span><span class="p">())</span>
         <span class="n">converged</span> <span class="o">=</span> <span class="bp">True</span>
 
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">EPSILON</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nf">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="nf">abs</span><span class="p">(</span><span class="n">prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">EPSILON</span><span class="p">):</span>
                 <span class="n">converged</span> <span class="o">=</span> <span class="bp">False</span>
                 <span class="k">break</span>
 
         <span class="k">if</span> <span class="n">converged</span><span class="p">:</span>
             <span class="k">break</span>
 
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nf">len</span><span class="p">(</span><span class="n">prV</span><span class="p">)):</span>
             <span class="n">prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">set_page_rank</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_vertices</span><span class="p">()[</span><span class="n">i</span><span class="p">],</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">set_page_rank</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_vertices</span><span class="p">()[</span><span class="n">i</span><span class="p">],</span> <span class="n">new_prV</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </code></pre></div></div>
 
-<p>The above code does exactly what we formulated. The <code class="highlighter-rouge">_compute_ranks</code> is a private method (jokes, Python has no access specifiers, but let’s respect that leading underscore) that carries out a single iteration of computing new \(pr(v_i)\) from old \(pr(v_i)\). <br />
-Then, we check for convergence in the <code class="highlighter-rouge">assign_page_ranks</code> method and update values, or break out of the loop accordingly. Oh, and this method also initializes the \(pr(v_i) = 1\) for each \(i\).<br />
+<p>The above code does exactly what we formulated. The <code class="language-plaintext highlighter-rouge">_compute_ranks</code> is a private method (jokes, Python has no access specifiers, but let’s respect that leading underscore) that carries out a single iteration of computing new \(pr(v_i)\) from old \(pr(v_i)\). <br />
+Then, we check for convergence in the <code class="language-plaintext highlighter-rouge">assign_page_ranks</code> method and update values, or break out of the loop accordingly. Oh, and this method also initializes the \(pr(v_i) = 1\) for each \(i\).<br />
 <br />
 Finally, this algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page. We are ready to get those query results now!</p>
 
@@ -175,8 +175,8 @@ The actual process is a bit more complicated though, and there are various types
 
 <p>I implemented the standard search and the phrase search. Note that in reality, search engines ignore stop words (i.e., frequently occuring words that don’t impart much meaning to the query, such as “a”, “and”, “of”, etc.). Here, these words are not ignored.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">phrase_query</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
-    <span class="s">"""Query the search engine.
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">phrase_query</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="sh">"""</span><span class="s">Query the search engine.
 
     Args:
         query (str): Query phrase or keyword
@@ -184,36 +184,36 @@ The actual process is a bit more complicated though, and there are various types
 
     Returns:
         List[str]: List of webpages, arranged in descending order of their page ranks
-    """</span>
-    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="p">.</span><span class="n">strip</span><span class="p">(</span><span class="s">' ,.</span><span class="se">\n</span><span class="s">;:</span><span class="se">\'\"\t</span><span class="s">!@#$%^&amp;*()_-=+[]?&lt;&gt;'</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">query</span><span class="p">.</span><span class="n">split</span><span class="p">()]</span>
-    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="s">''</span><span class="p">]</span>
-    <span class="n">urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># Initialize urls
+    </span><span class="sh">"""</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="p">.</span><span class="nf">strip</span><span class="p">(</span><span class="sh">'</span><span class="s"> ,.</span><span class="se">\n</span><span class="s">;:</span><span class="se">\'\"\t</span><span class="s">!@#$%^&amp;*()_-=+[]?&lt;&gt;</span><span class="sh">'</span><span class="p">).</span><span class="nf">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">query</span><span class="p">.</span><span class="nf">split</span><span class="p">()]</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="sh">''</span><span class="p">]</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># Initialize urls
 </span>
     <span class="k">if</span> <span class="n">phrase_query</span> <span class="ow">is</span> <span class="bp">False</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
-            <span class="n">urls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">urls</span> <span class="o">+</span> <span class="n">tmp_urls</span><span class="p">))</span> <span class="c1"># Take union
+            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+            <span class="n">urls</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">urls</span> <span class="o">+</span> <span class="n">tmp_urls</span><span class="p">))</span> <span class="c1"># Take union
 </span>    <span class="k">else</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
-            <span class="n">urls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tmp_urls</span><span class="p">),</span> <span class="n">urls</span><span class="p">))</span> <span class="c1"># Take intersection
+            <span class="n">tmp_urls</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+            <span class="n">urls</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">filter</span><span class="p">((</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tmp_urls</span><span class="p">),</span> <span class="n">urls</span><span class="p">))</span> <span class="c1"># Take intersection
 </span>
             <span class="c1"># break if at any point the intersection becomes empty. Reduces unnecessary computation
 </span>            <span class="k">if</span> <span class="n">urls</span> <span class="o">==</span> <span class="p">[]:</span>
                 <span class="k">break</span>
 
-        <span class="n">phrase</span> <span class="o">=</span> <span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+        <span class="n">phrase</span> <span class="o">=</span> <span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
-            <span class="n">content</span> <span class="o">=</span> <span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="n">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
-            <span class="k">if</span> <span class="n">re</span><span class="p">.</span><span class="n">findall</span><span class="p">(</span><span class="n">phrase</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]:</span>
-                <span class="n">urls</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">parser</span><span class="p">.</span><span class="nf">get_content</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">re</span><span class="p">.</span><span class="nf">findall</span><span class="p">(</span><span class="n">phrase</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]:</span>
+                <span class="n">urls</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
-    <span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="n">get_page_rank</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">]</span>
-    <span class="n">urls_with_rank</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">urls</span><span class="p">,</span> <span class="n">ranks</span><span class="p">))</span>
+    <span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">internet</span><span class="p">.</span><span class="nf">get_page_rank</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">]</span>
+    <span class="n">urls_with_rank</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">zip</span><span class="p">(</span><span class="n">urls</span><span class="p">,</span> <span class="n">ranks</span><span class="p">))</span>
 
     <span class="c1"># Sort wrt to ranks (2nd element of tuples) and arrange in descending order
-</span>    <span class="n">urls_with_rank</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span>    <span class="n">urls_with_rank</span><span class="p">.</span><span class="nf">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">urls_with_rank</span><span class="p">]</span>
 </code></pre></div></div>
 
