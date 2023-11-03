@@ -4,11 +4,12 @@
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
-		    <ul>
-		        {% for link in site.links %}
+			<ul>
+				{% for link in site.links %}
 				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
-		    </ul>
+				{% endfor %}
+			</ul>
 		</nav>
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
+<div class="navigation-filler"></div>

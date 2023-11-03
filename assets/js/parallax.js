@@ -1,15 +1,16 @@
 // Convert <img> into background-image for the image-wrap div
 $(".image-wrap").each(function (index, el) {
     $(el).css({
-        "width": "100%",
-        "height": "75vh",
+        "min-width": "100vw",
+        "height": "80vh",
+        "overflow": "hidden",
         "position": "fixed",
         "z-index": "-100"
     });
 
     $(el).children("img").css({
-        "min-height": "100%",
-        "min-width": "100%",
+        "height": "100%",
+        "object-fit": "cover",
         "filter": "blur(5px)"
     });
 
@@ -21,10 +22,7 @@ $(".image-wrap").each(function (index, el) {
     $(el).after(pushDownEmptyDiv);
 });
 
-$(".parallax")
-
 // Reduce Blur on scroll for image
-$(".parallax").css("filter", `blur(3px)`);
 $(window).scroll(() => {
     let scroll_pos = $(window).scrollTop();
     // let opacity_val = scroll_pos / 400 + 0.8;

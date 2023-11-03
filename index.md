@@ -19,9 +19,9 @@ image:
 
 Hello, world! I'm a fourth year student at McGill University, studying Computer Science and Statistics.
 \
-My academic interests include distributed and large scale systems, applied machine learning, parallel computing, backend development, and shell scripting. This semester, I'm also exploring robotics and learning ROS.
+My academic interests include distributed and large scale systems, cloud computing, applied machine learning, backend software development, and shell scripting.
 \
-When I'm not grinding assignments right before the deadline or converting coffee into code, I like to hang out with my friends, bike/walk around the city, go hiking, listen to music, learn about investing, or occasionally hit the gym.
+When I'm not grinding assignments right before the deadline, job hunting, or converting coffee into code, I like to hang out with my friends, bike/walk around the city, go hiking, listen to music, or try my hand at creative writing (see "Writes").
 \
 Feel free to ping me for having convos about CS, life as an international student, or pretty much anything else in general!
 
