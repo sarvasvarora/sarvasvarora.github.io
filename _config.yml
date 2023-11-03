@@ -38,13 +38,13 @@ links:
     url: /cv/
   - title: Deets # deets about the stuff I experience in life + philosophical articles + new findings
     url: /deets/
-  - title: Articles # academic related articles
-    url: /articles/
+  # - title: Articles # academic related articles
+  #   url: /articles/
   - title: Projects # CS projects
     url: /projects/
-  - title: Readings # reading list
-    url: /readings/
-  - title: Miscellaneous # stuff like MOOCs, resources, notes, etc.
+  # - title: Readings # reading list
+  #   url: /readings/
+  - title: Misc # stuff like MOOCs, resources, notes, etc.
     url: /misc/
   - title: Tags Archive # all the posts at one place, organized by tags
     url: /tags/ 
@@ -52,7 +52,7 @@ links:
     url: /search/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Calcutta
+timezone:    America/Montreal
 future:      true
 highlighter: #rouge 
 markdown:    kramdown

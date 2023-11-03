@@ -3,7 +3,7 @@ layout: post
 title: The hitchhiker's guide to search engines
 excerpt: Implementing a simple search engine based on the Google PageRank algorithm, in Python.
 modified:
-categories: article
+categories: deet
 tags: [Computer Science, Algorithms]
 comments: true
 share: true

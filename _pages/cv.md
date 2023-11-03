@@ -8,7 +8,7 @@ comments: false
 
 ## Education
 
-#### McGill University (September 2020 - December 2023) <br> GPA: 3.86
+#### McGill University (September 2020 - December 2023) <br> GPA: 3.61
 
 I am currently pursuing Bachelor's degree at McGill University as a Computer Science major, along with a Statistics minor. Throughout my undergraduate degree, I took courses in Distributed Systems, Database System, Computer Networks, Cloud Computing, Software Privacy, Parallel Computing, Applied Machine Learning, NLP, Probability and Statistics, and Applied Linear Algebra.  
 Apart from that, I was involved with the McGill Computer Science Undergraduate Society (CSUS) as its VP Internal, where I was responsible for organizing the Industry Mentorship Program, and designing CSUS stickers and merch. I was also involved in Hack McGill as a developer, where I was responsible for working on the McHacks website.

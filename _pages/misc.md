@@ -1,8 +1,8 @@
 ---
 layout: post-index
 permalink: /misc/
-title: Miscellaneous
-tagline: Some misc. stuff I'd like sharing ;)
+title: Misc
+tagline: Some miscellaneous stuff I'd like sharing ;)
 tags: [misc]
 modified: 8-15-2017
 comments: false
@@ -15,7 +15,7 @@ image:
 
 {% for post in site.categories.misc %}
 
-  <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+  <h3 class="author-social"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
   <p><i><small>Posted: {{ post.date | date: "%B %-d, %Y"}} Updated: {{ post.modified | date: "%B %-d, %Y"}}</small></i></p>
   {% if post.image.teaser %}
   <figure>
