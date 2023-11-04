@@ -1,0 +1,80 @@
+---
+layout: post
+title: The Introvert Speaks
+excerpt: A short story.
+modified:
+categories: deet
+tags: [Story, Self Reflection]
+comments: true
+share: true
+image:
+    teaser:
+---
+
+I am a reticent person. Based on their intricate psychoanalysis, I would be what they call an introvert, but they also call me cold or dense sometimes. And I often think to myself. All sorts of things, not that I dislike it, perhaps sometimes to the point where I realize I’m overthinking. Where do I stand, why I am doing what I’m doing, does it help me achieve my end goal (I’m still unsure what I really want though), does this person trying to strike a trivial conversation even want to be a part of it, what do my friends really think of me, do they actually care or just pretend to act out of mere formality, should I bother adding to this conversation when the others are already talking (honestly, I’d rather just enjoy my drink in peace). I could make an effort to speak my mind, but then they would know me inside out. No, they don’t deserve to know me like that, so I’ll stay put because it doesn’t matter after all, and why bother for I can still laugh with them and be a part of the group. And then I’d feel sad because they don’t know much about me — to which end I wonder, believe it or not, if they would even understand me. Oh, how hard is it to be the mysterious person! I sometimes think I should’ve been a spy with the amount of information I can retain, without letting it out.  
+\
+​When I was younger, I used to be, what you would consider, more amiable. I used to be that cool kid, always ready with some story to share, who hangs around in different friend groups, and had the prowess to convert strangers into friends. But as I grew into adulthood, I found myself to gradually become more nonchalant and reserved, and I can’t say why. I often find myself thinking in retrospect that all the connections I’ve had in my life, except for a certain few, because there’s always a couple of exceptions, are just superficial: I have been with a lot of people in my past, but now I guess I haven’t, but that it only seemed so for some reason, and they don’t exist altogether. I have numerous examples of people who I once used to be friends with, but where are they now? We don’t even talk anymore, and I know it’s not solely my fault because a double-sided dagger cuts both ways. I know I didn’t bother reaching out, but did they? Little by little, I came to realize that I was with most such people purely because of circumstantial reasons, that there was no real connection between us. Nor would I bother to pursue something so flaky for it would only create hollow memories that I am better off without. Indeed, this attitude began to reflect itself in very many trivialities of my life: for instance, I would walk around the city with my Airpods on, looking at the people around me and think, not so much because I was interested in getting to know them, but if they were a part of my life today, would they still be around years down the road. More probably than not, they would also disappear in the abyss of the shadow that plagues my memories. And it’s not because I’m a narcissist — I don’t hate or look down upon people more so than I do so upon myself, not that I particularly loathe myself — but because what’s the point trying to know someone when they probably won’t care either. Sure, you may put us in a room together, ask us to work on the same project, or put us through the same hell, and sure we may communicate, physically, but would our souls communicate? Would the essence of our beings truly connect, because, I reiterate, it is all about the circumstances for that only happens with certain special people, and if I already have them in my life, why should I bother trying.  
+\
+​I woke up super late today, totally out of my zen. I worked overtime yesterday, and let me be clear that I do not work as a spy, to the point that I was exhausted and took a shower as soon as I got home — an hour long shower. Now you might think why on earth would I spend an hour in the shower, but let me tell you that surrendering myself to the warm embrace of the water, losing all notion of time and space at that moment held a magic that no social interaction could ever match. And in that stolen hour, I found solace, a breath away from the noise of the outside world. Then I whipped myself a delicious steak, savoring the aroma as it filled the kitchen. I despised the smoke that filled my apartment though because the chimney vent doesn’t work anymore, and I am done dealing with my building management. They will make up a million excuses to not fix things, and pleading my case is the last thing I desire to indulge in after coming back from work.
+​Work can be fun sometimes, but for the most part It’s boring, repetitive — but it pays good money — and I’ve convinced myself I’ll work to save enough money to retire early, perhaps in my forties or so, living peacefully with my family. I would love to travel; I always think about it. There’s so much to learn and discover: I would explore the wonders of Ethiopia, where the ancient rock-hewn churches of Lalibela stand testament to human ingenuity; I see myself standing in Faroe Islands, kissing my wife under the sky enchanted by northern lights; and I would wander through the alleys of Morocco, where every building is washed in shades of blue, creating a mesmerizing labyrinth of azure hues. I see money as a means to an end, an end that I long for, as you can only earn so much to spend for yourself and your family, that after a point you’ll find yourself spending on the most random atrocities to redeem a false sense of fulfillment. Anyways, for all that I do work, which means I have coworkers, and talking to them feels like the most spurious conversations I’ve had to have. Everyone was talking about their weekend plans yesterday, as if that mattered. Why is it that everyone has to go on a hike, break their record rock climbing time, or plan their next vacation sunbathing on the beach. I just want to stay at my home, confined under my blanket, and hear my cat purr all day while reading Pushkin’s poetry. But how can I let this boring masterplan out in front of everyone, and so I stay quite, ravishing my taste buds with the Chipotle chicken bowl that is more loyal to me than any of these coworkers, to grace my lunch table almost every other day.  
+\
+​“You got any plans this weekend?” asked one of them as the existing conversation started to dull, as if I was their closure to the rest of the lunch.  
+\
+I hastily finished the chunky bite of chicken I was wholeheartedly invested in and answered “No, nothing planned really. Might just hang around with some friends impromptu. Bet you’ll have fun on your twelve-hour hike!”  
+\
+“Haha, honestly it’s not as bad as it sounds. Really. Most of it is flat and the elevation gain isn’t that much. It’s just, super long, but it leads to a very beautiful lake!”  
+\
+“Yeah, that’s nice!” I answered as I took another bite of my food that looked even more enticing than before. I didn’t know what else to say, or rather, because I know it, I wasn’t interested in his hike in the least bit — I fancy I bored them, but that didn’t concern me. All I had on mind was finishing yesterday’s work and lie in my cozy bed.  
+\
+And I wish I had stayed in bed all day today; I love sleeping — it’s like being in my utopia devoid of all earthly matters. But I woke up, twice, as I couldn’t resist borrowing myself into the warn cocoon one more time. It’s been a slow morning, cold and rainy outside, each moment feeling like a cat stretching after a deep slumber. Except mine’s still snoozing from a long day of eating and sleeping. I woke up to her nestled within the folds of my blanket alongside me, her whiskers twitching in response to a dream only she could decipher. I don’t dream, or if I do, I don’t remember them. But I like my sleep like that: a void of calmness unmarred by the chaos of dreams, an escapade where worries don’t tread. After making myself coffee and a quick waffle-berry breakfast, I stayed in my bed for a couple of hours. The raindrops tapped the windowpane insistently, their lullaby echoing within my room — a perfect environment to sip on my hot cappuccino while reading White Nights.
+As I finished reading the story, the gray veil casted by the clouds had been lifted, only to be replaced by a gloomier dark sky, but I found beauty in the frayed clouds bathed in the soft luminescence of the moon, and stars shimmering like tiny diamonds. It’s nights like these I like to take a stroll by the seawall. It’s not far from my place, and so I put on a jacket and my boots and left my home ready to embrace the mysterious allure of the night. I saw street lamps, for as far as I could see, lightening up the path, as if it was decorated to welcome me. There was almost no one around; the night belonged to me and the whispers of the ocean. And as I was listening to Ты моё солнце (for I couldn’t think of any better song than this) under the empire of the stars with the moon as their queen, I found myself lost in contemplation: if only all days could be as tranquil, and I could enjoy myself in peace!  
+\
+I approached the lookout point, which protruded into the ocean like a pier, but looped back to the other side forming a semi-circular shape. At the center of the arch is a tiny garden with red, white, and violet flowers — I really like the smell of the white ones, those are my favorite — with benches around it, and a path to walk across the edge guarded by fence. It is my usual spot to take a break and smoke a cigarette or two before heading back home. I would lean on the fence and adore the view of boats from here, with a picturesque mountain backdrop, and seaplanes docked in a row like ducklings lined up behind their mother. Why I admire this spot so much I don’t know, but it makes me happy. Perhaps it’s because I feel like a king, with my own naval and air units at disposal, but that’s a stretch I know.  
+\
+As I was smoking a cigarette, I heard a voice from somewhere behind me. “Excuse me… could you spare me one, please?” It was a woman’s voice, who I realized would be somewhere my age as I turned around to look. I was hesitant to bother with the interaction at first, because how could she ruin this very moment I was enjoying to the fullest. But then I saw something in her eyes and couldn’t help myself but approach her. She sat on the bench, like a silhouette, and I noticed tears in her eyes, her voice trembling. She was wearing a nice dress, all soaked in rain, but I noticed her cuissardes and I recall them now.  
+\
+“Here you go,” I said, my own voice surprisingly gentle, presumably longing to ease her pain, considering my usual reticence.  
+\
+"Thank you," she murmured, her fingers trembling as she accepted the cigarette. She lit it with shaky hands, her eyes never leaving mine. In that shared moment, beneath the vast expanse of the night sky, we were two lost souls finding solace in midst of our own battles.  
+\
+“I come here often,” I said, pointing to the little garden behind her, “I find it rather peaceful to take a break, come here, and just lose myself in the moment. How about you?”  
+\
+She looked at me, her gaze searching for something, perhaps a fragment of understanding. “I... I had a fight with someone I love,” her voice barely audible, “I needed a place to quiet place to think.”  
+\
+I nodded. Love, a notion that carries oceans of emotions and depths of pain, is something, that I probably have gaslighted myself into believing, am afraid of. Because I love deeply, and I know for a fact that if you love the wrong person, it ends up hurting you. And yet, I think I’ve kindled the fuse for my self-destruction, for I know for a fact that I am in love with someone. "Love can be a storm and a sanctuary, all at once," I said, my words echoing the complexities of my thoughts.  
+\
+She seemed to find comfort in my words, a flicker of recognition in her eyes. "It's like you understand," she said, taking a deep drag from her cigarette. "It's just... we argued about something so trivial, and it escalated into this... this abyss of anger and resentment. I… just couldn’t explain my side of the story well enough."  
+\
+I leaned against the fence, listening intently, as though I wanted to connect to this person voluntarily. You see, even though it didn’t matter to me, I could feel her pain. I know for a fact that this is one of those circumstances when it just happens — I felt a genuine connection, a reason to talk to this person. "It happens," I replied. "Small things often hide the bigger issues. Communication is the key, but sometimes it's the hardest door to unlock. And what lies beyond the door can very well be unpredictable."  
+\
+She let out a soft, bitter laugh — seemingly sarcastic as if she could read me through and through. "Communication. Easier said than done, right?"  
+\
+I smiled in agreement. "Indeed. It's like walking through a maze blindfolded. I myself have a hard time articulating my thoughts because you see, I… I want to say a lot, but at times, I just can’t. But that doesn’t mean you’re the bad person. I want you to know that you learn to live with it, to accept it as part of yourself. People might distance themselves from you, but you find ways to fill the emptiness, even if it's just for a little while at a time."  
+\
+“I’m sure they’d be over the silly argument by tomorrow,” I said trying to reassure her after going on my little rant.  
+\
+Her eyes softened, and for a moment, it felt like we were the only two people in the world. "Thank you for not dismissing me," she said, her gaze steady. "It's just... I needed a moment away from the chaos, from the noise in my head. And your words, they helped."  
+\
+I nodded, grateful for the connection we'd found in this brief exchange. "Sometimes, the night can be our confidant, and strangers, our friends."  
+\
+"You know," she said, her voice barely a whisper now, "sometimes, I feel like the world is too loud. And in this quiet place, beneath the stars, I found something I've been searching for — a moment of peace."  
+\
+I nodded, understanding her sentiment all too well. "In the silence, we often discover the loudest truths."  
+\
+“Do you… love someone?” she asked.  
+\
+And in that moment, I wanted to tell her everything, how I love this special someone in my life; how my heart races just thinking about them; and how I can just talk to them for hours without getting bored or running out of things to talk about. They are like my guiding light in darkness. But perhaps this guiding light is what is making me into who I am, for of course, I haven’t confessed my love to them yet — not because I am unable to do so, but, as I told you before, I am afraid. So conflicted and feeling vulnerable, I responded “No, not really.”  
+\
+“You lie,” she said that almost instantly.  
+\
+“How do you know?” How could she possibly understand me all so well after just having met me, and I was racing my brain through this, I felt defeated.  
+\
+“I just... know. Anyways, I’m sorry for having asked that in the first place,” she replied trying to not make me feel any more uncomfortable.  
+\
+We continued talking, our words meandering through the labyrinth of our experiences. We shared laughter, anecdotes, and even moments of silence that spoke volumes.  
+\
+"Thank you," she said finally, her eyes shimmering with gratitude. "For being here, for understanding. I needed this tonight more than I can express."  
+\
+I smiled, realizing that perhaps, in those shared moments, I had found a fragment of purpose. "I needed it too," I admitted, surprising myself with the honesty of my words. "Sometimes, we all need a reminder that we're not alone in our battles."  
+\
+With that, we stood in companionable silence, watching the moon's reflection shimmer on the tranquil surface of the sea. It felt like a moment suspended in time, a testament to the profound connection that could be forged between two souls.

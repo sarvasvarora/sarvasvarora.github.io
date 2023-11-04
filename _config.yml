@@ -57,7 +57,7 @@ future:      true
 highlighter: #rouge 
 markdown:    kramdown
 kramdown:
-  extensions: ["strikethrough"]
+  extensions: ["strikethrough", "Footnotes"]
   
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/

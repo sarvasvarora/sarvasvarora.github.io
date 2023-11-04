@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The hitchhiker's guide to search engines
+title: The Hitchhiker's Guide to Search Engines
 excerpt: Implementing a simple search engine based on the Google PageRank algorithm, in Python.
 modified:
 categories: deet
