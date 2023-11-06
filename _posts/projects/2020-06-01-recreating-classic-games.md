@@ -3,7 +3,7 @@ layout: post
 title: Recreating popular games
 excerpt: A collection of small games I programmed while learning programming.
 modified: 2021-01-12
-categories: project
+categories: projects
 tags: [Web Development, Programming]
 comments: true
 share: true

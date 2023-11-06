@@ -3,7 +3,7 @@ layout: post
 title: The Dance of The River
 excerpt: A memoir essay based on my life.
 modified:
-categories: deet
+categories: deets
 tags: [Essay, Self Reflection]
 comments: true
 share: true

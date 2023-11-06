@@ -3,7 +3,7 @@ layout: post
 title: And So, We Go
 excerpt: A free verse poem reflecting the situation in Gaza.
 modified: 
-categories: deet
+categories: deets
 tags: [Poetry]
 comments: true
 share: true

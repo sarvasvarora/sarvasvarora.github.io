@@ -2,8 +2,8 @@
 layout: post
 title: Silhouette
 excerpt: A free verse poem from an omniscient narrator.
-# modified: YYYY-MM-DD
-categories: deet
+modified:
+categories: deets
 tags: [Poetry]
 comments: true
 share: true

@@ -3,7 +3,7 @@ layout: post
 title: The Introvert Speaks
 excerpt: A short story.
 modified:
-categories: deet
+categories: deets
 tags: [Story, Self Reflection]
 comments: true
 share: true

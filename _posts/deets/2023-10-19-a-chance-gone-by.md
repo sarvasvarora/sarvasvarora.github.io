@@ -3,7 +3,7 @@ layout: post
 title: A Chance Gone By
 excerpt: A poem about the bittersweet complexities of unrequited love and a missed opportunity to confess it.
 modified: 
-categories: deet
+categories: deets
 tags: [Poetry]
 comments: true
 share: true

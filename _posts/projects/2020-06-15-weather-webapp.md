@@ -3,7 +3,7 @@ layout: post
 title: How's the weather?
 excerpt: A web app that shows the current weather based on user's location.
 modified: 2021-01-13
-categories: project
+categories: projects
 tags: [Web Development]
 comments: true
 share: true

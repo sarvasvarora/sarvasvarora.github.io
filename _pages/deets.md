@@ -9,7 +9,7 @@ comments: false
 
 <p>Sharing deets about the stuff I learn and experience!</p>
 
-{% for post in site.categories.deet %}
+{% for post in site.categories.deets %}
 
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% if year != year_previous %}

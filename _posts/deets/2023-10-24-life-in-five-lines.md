@@ -3,7 +3,7 @@ layout: post
 title: Life in Five Lines
 excerpt: Two poems about life, written using contrasting word choices.
 modified:
-categories: deet
+categories: deets
 tags: [Poetry]
 comments: true
 share: true

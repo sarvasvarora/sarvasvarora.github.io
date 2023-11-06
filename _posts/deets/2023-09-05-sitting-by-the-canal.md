@@ -3,7 +3,7 @@ layout: post
 title: Sitting by The Canal
 excerpt: A recount of my evening sitting by the Lachine Canal.
 modified: 
-categories: deet
+categories: deets
 tags: [Essay]
 comments: true
 share: true

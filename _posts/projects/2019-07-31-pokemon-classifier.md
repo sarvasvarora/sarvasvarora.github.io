@@ -3,7 +3,7 @@ layout: post
 title: Pokémon Classification
 excerpt: Multiclass Pokémon classification using the KNN algorithm.
 modified: 2020-01-12
-categories: project
+categories: projects
 tags: [Machine Learning, Computer Vision]
 comments: true
 share: true

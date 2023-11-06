@@ -3,11 +3,11 @@ layout: post-index
 permalink: /articles/
 title: Articles
 tagline: A List of Article Posts
-tags: [article]
+tags: [articles]
 comments: false
 ---
 
-{% for post in site.categories.article %}
+{% for post in site.categories.articles %}
 
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != year_previous %}

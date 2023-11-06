@@ -3,7 +3,7 @@ layout: post
 title: A Day in Delhi
 excerpt: An essay written in plural point of view.
 modified: 
-categories: deet
+categories: deets
 tags: [Essay]
 comments: true
 share: true
