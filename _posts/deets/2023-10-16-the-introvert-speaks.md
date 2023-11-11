@@ -8,7 +8,7 @@ tags: [Story, Self Reflection]
 comments: true
 share: true
 image:
-    teaser:
+    feature: deets/2023-10-16-the-introvert-speaks/introvert.jpg
 ---
 
 I am a reticent person. Based on their intricate psychoanalysis, I would be what they call an introvert, but they also call me cold or dense sometimes. And I often think to myself. All sorts of things, not that I dislike it, perhaps sometimes to the point where I realize I’m overthinking. Where do I stand, why I am doing what I’m doing, does it help me achieve my end goal (I’m still unsure what I really want though), does this person trying to strike a trivial conversation even want to be a part of it, what do my friends really think of me, do they actually care or just pretend to act out of mere formality, should I bother adding to this conversation when the others are already talking (honestly, I’d rather just enjoy my drink in peace). I could make an effort to speak my mind, but then they would know me inside out. No, they don’t deserve to know me like that, so I’ll stay put because it doesn’t matter after all, and why bother for I can still laugh with them and be a part of the group. And then I’d feel sad because they don’t know much about me — to which end I wonder, believe it or not, if they would even understand me. Oh, how hard is it to be the mysterious person! I sometimes think I should’ve been a spy with the amount of information I can retain, without letting it out.  
