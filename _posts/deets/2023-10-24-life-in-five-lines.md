@@ -8,7 +8,9 @@ tags: [Poetry]
 comments: true
 share: true
 image:
-  teaser: 
+  feature: deets/2023-10-24-life-in-five-lines/absurd.jpg
+  credit: Album Cover of Для тебя (by Канги)
+  creditlink: https://open.spotify.com/album/4gFOyO03NVoiiGetjEP4gO?si=PVRWaGEITkKvFWbyaSkIjA
 ---
 
 | - | - |

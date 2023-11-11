@@ -8,7 +8,9 @@ tags: [Poetry]
 comments: true
 share: true
 image:
-  teaser: 
+  feature: deets/2023-10-19-a-chance-gone-by/love.gif
+  credit: Hyouka (Anime)
+  creditlink: https://en.wikipedia.org/wiki/Hyouka_(TV_series)
 ---
 
 In your laughter, friendship blooms,  

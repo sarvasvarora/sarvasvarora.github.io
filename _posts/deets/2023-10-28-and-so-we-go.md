@@ -60,9 +60,9 @@ Pouring out sorrow in the cafes of the wicked west.
 For dissent was not a convenience: oh, how insignificant we are!  
 So we hid in a bunker, but it was a bakery.  
 And the bakery was set ablaze, as if it were a mockery:  
-​Of how much we are valued.  
-​Of what we deserve.  
-​Of what is yet to come.  
+&nbsp;&nbsp;&nbsp;&nbsp;​Of how much we are valued.  
+&nbsp;&nbsp;&nbsp;&nbsp;​Of what we deserve.  
+&nbsp;&nbsp;&nbsp;&nbsp;​Of what is yet to come.  
 \
 And so, we prepare to die;  
 As we hide in a bunker.  
