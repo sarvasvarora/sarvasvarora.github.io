@@ -8,7 +8,7 @@ tags: [Poetry]
 comments: true
 share: true
 image:
-  teaser: 
+  feature: deets/2023-10-26-silhouette/silhouette.gif
 ---
 
 And so, I was all alone.[^1]  

@@ -8,7 +8,9 @@ tags: [Poetry]
 comments: true
 share: true
 image:
-  teaser: 
+  feature: deets/2023-10-28-and-so-we-go/war.jpg
+  credit: IN-SHADOW — A Modern Oddyssey
+  creditlink: https://youtu.be/j800SVeiS5I
 ---
 
 And so, we held our ground;  
