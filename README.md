@@ -8,4 +8,4 @@
 
 * Command to install dependencies: `bundle install`
 
-* Command to start local server: `bundle exec jekyll s --trace`
+* Command to start local server: `bundle exec jekyll s --trace --livereload`
