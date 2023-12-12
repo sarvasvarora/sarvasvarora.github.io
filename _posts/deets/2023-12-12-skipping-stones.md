@@ -8,7 +8,9 @@ tags: [Poetry]
 comments: true
 share: true
 image:
-  teaser: 
+  feature: deets/2023-12-12-skipping-stones/skipping-stones.jpg
+  credit: Art by Justin Lemmon
+  creditlink: https://www.justinlemmon.com/skipping-stones
 ---
 
 The stone gracefully treads over the river,  
