@@ -17,24 +17,21 @@ image:
 
 ### About me 
 
-Hello, world! I'm a fourth year student at McGill University, studying Computer Science and Statistics.
+Hello, world! I am a software developer at AWS Step Functions, working from Vancouver. I graduated from McGill University, studying Computer Science and Statistics.
 \
 My academic interests include distributed and large scale systems, cloud computing, applied machine learning, backend software development, and shell scripting.
 \
-When I'm not grinding assignments right before the deadline, job hunting, or converting coffee into code, I like to hang out with my friends, bike/walk around the city, go hiking, listen to music, or read.
+When I'm not grinding deadlines or converting coffee into code, I like to hang out with my friends, bike/walk around the city, play fight with my cat, listen to music, or read.
 \
-Feel free to ping me for having convos about CS, life as an international student, or pretty much anything else in general!
+Feel free to ping me for having convos about software engineering, life as an international student, or pretty much anything else in general!
 
 ### Currently
 
-I am currently in the last semester of my undergraduate degree, mostly focussed on coursework and job hunting. I am also изучаю русский язык (learning Russian language) and exploring my hand at creative writing (see some of my works under ["Deets"](/deets/)).
+Mostly working, and relaxing when I'm done with work. I am also изучаю русский язык (learning Russian language) and exploring my hand at creative writing (see some of my works under ["Deets"](/deets/)). I recently got into photography and do that as a hobby sometimes (see some of my [favorite shots](https://www.amazon.ca/photos/share/K1VrPxmZnyKtOqsBiROPV2PRTCsS5eg52x4XGYCDNYF) so far).
 
 ### Contact me
 
-For collaborations and advising, please contact me via my email.  
-If you have any questions or critical comments regarding my blog posts, please post your questions under the blog post.  
-\
-Otherwise, my DMs are always open.
+Feel free to get in touch via email or LinkedIn :)
 
 ### Credits
 

@@ -2,7 +2,7 @@
 $(".image-wrap").each(function (index, el) {
     $(el).css({
         "min-width": "100vw",
-        "height": "80vh",
+        "height": "90vh",
         "overflow": "hidden",
         "position": "fixed",
         "z-index": "-100"
@@ -11,7 +11,7 @@ $(".image-wrap").each(function (index, el) {
     $(el).children("img").css({
         "height": "100%",
         "object-fit": "cover",
-        "filter": "blur(5px)"
+        "filter": "blur(0)"
     });
 
     var pushDownEmptyDiv = $("<div></div>").css({
@@ -24,10 +24,9 @@ $(".image-wrap").each(function (index, el) {
 
 // Reduce Blur on scroll for image
 $(window).scroll(() => {
+    let max_blur = 6.0;
     let scroll_pos = $(window).scrollTop();
-    // let opacity_val = scroll_pos / 400 + 0.8;
-    let blur_val = Math.max(Math.log(500 / scroll_pos), 0);
-    console.log(blur_val);
+    let blur_val = max_blur - Math.min(max_blur, Math.max(Math.log(500 / scroll_pos), 0));
     $(".parallax>img").css("filter", `blur(${blur_val}px)`);
 });
 

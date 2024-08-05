@@ -10,8 +10,8 @@ comments: false
 
 #### McGill University (September 2020 - December 2023) <br> GPA: 3.61
 
-I am currently pursuing Bachelor's degree at McGill University as a Computer Science major, along with a Statistics minor. Throughout my undergraduate degree, I took courses in Distributed Systems, Database System, Computer Networks, Cloud Computing, Software Privacy, Parallel Computing, Applied Machine Learning, NLP, Probability and Statistics, and Applied Linear Algebra.  
-Apart from that, I was involved with the McGill Computer Science Undergraduate Society (CSUS) as its VP Internal, where I was responsible for organizing the Industry Mentorship Program, and designing CSUS stickers and merch. I was also involved in Hack McGill as a developer, where I was responsible for working on the McHacks website.
+I graduated from McGill University with a Bachelor's degree in Computer Science, along with a minor in Statistics. Throughout my undergraduate degree, I took courses in Distributed Systems, Database System, Computer Networks, Cloud Computing, Software Privacy, Parallel Computing, Applied Machine Learning, NLP, Probability and Statistics, and Applied Linear Algebra.  
+Apart from academics, I was involved with the McGill Computer Science Undergraduate Society (CSUS) as its VP Internal, where I was responsible for organizing the Industry Mentorship Program, and designing CSUS stickers and merch. I was also involved in Hack McGill as a developer, where I was responsible for working on the McHacks website.
 
 #### Banasthali Public School (April 2018 - March 2020) <br> GPA: 95.6%
 
@@ -19,6 +19,9 @@ I graduated high school from Banasthali Public School as the class valedictorian
 My senior year research projects involved analyzing the affect of various bleaching agents on different types of fabrics and investigating changes in magnetic behavior of permanent magnets subject to extreme temperatures.
 
 ## Relevant Work Experience
+
+#### SDE at AWS Step Functions
+In April 2024, I joined [AWS Step Functions](https://aws.amazon.com/step-functions/) as a full time software developer. My core job responsibilities include developing new features for the service, maintaining existing codebase, and working as an oncall operator. 
 
 #### SDE Intern at AWS Step Functions
 In summer 2023, I worked at [AWS Step Functions Console](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html), where I worked on writing integration tests for upcoming Step Functions Console features. I also refactored the existing integration tests onto an internal AWS platform as a move to onboarding the Console to Native AWS (NAWS).
