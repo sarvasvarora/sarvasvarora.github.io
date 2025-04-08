@@ -17,7 +17,7 @@ image:
 
 ### About me 
 
-Hello, world! I am a software developer at AWS Step Functions, working from Vancouver. I graduated from McGill University, studying Computer Science and Statistics.
+Hello, world! I am an SDE at AWS Step Functions, based in Vancouver. I graduated from McGill University, studying Computer Science and Statistics.
 \
 My academic interests include distributed and large scale systems, cloud computing, applied machine learning, backend software development, and shell scripting.
 \
